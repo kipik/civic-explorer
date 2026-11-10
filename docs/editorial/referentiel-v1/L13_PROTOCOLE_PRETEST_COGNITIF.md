@@ -1,7 +1,7 @@
 # L13 — Protocole renforcé de prétest cognitif qualitatif (`Variante A` vs `Variante B`)
 
 **Statut :** Protocole consolidé (Axe 4) — **recrutement bloqué dans l'attente des validations humaines, de la répétition à blanc et du dossier RGPD/consentement** (voir [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md)).  
-**Référentiel testé :** Formulations consolidées [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md) (`DOM-01` à `DOM-08` — sous réserve d'arbitrage humain sur les écarts § 1 / § 2 pour `DOM-02` et `DOM-05`), avec présentation systématique post-exercice des variantes `1B`, `2B`, `7B` et `8B` après le retour spontané.  
+**Référentiel testé :** Formulations consolidées et harmonisées [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md) (`DOM-01` à `DOM-08`, arbitrage `DOM-02` et `DOM-05` acté pour le dry run interne et le prétest candidat), avec présentation systématique post-exercice des variantes `1B`, `2B`, `7B` et `8B` après le retour spontané.  
 **Nature méthodologique :** Prétest cognitif qualitatif formatif (*think-aloud* + *verbal probing*, méthode Willis 2005). **Il ne s'agit pas d'une expérience quantitative et la taille d'échantillon ne permet en aucun cas de démontrer statistiquement l'absence de biais.**
 
 ---

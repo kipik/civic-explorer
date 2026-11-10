@@ -1,10 +1,10 @@
 # L15 — Supports de présentation des Variantes A et B et vérification du plan MaxDiff (`N = 8, k = 4, r = 4`)
 
-**Statut :** **SUPPORTS OPÉRATIONNELS DE PRÉTEST COGNITIF — HORS APPLICATION (`src/` intact)**  
+**Statut :** **SUPPORTS HARMONISÉS SUR `L11` — PRÊTS POUR DRY RUN INTERNE (PAPIER `2×2`) — ARBITRAGES PRÉTEST EXTERNE À CONFIRMER (`src/` intact)**  
 **Sources vérifiées :** [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md), [`L13_PROTOCOLE_PRETEST_COGNITIF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L13_PROTOCOLE_PRETEST_COGNITIF.md), [`L14_KIT_CARTES_MAXDIFF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L14_KIT_CARTES_MAXDIFF.md), [`PILOT_DECISION.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/experiments/maxdiff/PILOT_DECISION.md) et [`P1_1_SPECIFICATION_v0.3.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/P1_1_SPECIFICATION_v0.3.md).
 
 > **Contrainte de comparabilité stricte :**  
-> Les Supports **A** et **B** utilisent **exactement** les mêmes huit domaines, les mêmes formulations (`L11` § 2), le même périmètre complet consultable (`L14`), la même consigne MaxDiff, les mêmes états de réponse, le même nombre de séries (`b = 8`), la même taille de série (`k = 4`) et les mêmes règles de randomisation (`N = 8, k = 4, r = 4`). **Aucune variante lexicale (`1B`, `2B`, `7B`, `8B`) n'y figure.** La **seule variable expérimentale** est le moment et le mode de découverte des huit domaines.
+> Les Supports **A** et **B** utilisent **exactement** les mêmes huit domaines, les mêmes formulations (`L11` harmonisé après arbitrage `DOM-02` et `DOM-05`), le même périmètre complet consultable (`L14`), la même consigne MaxDiff, les mêmes états de réponse, le même nombre de séries (`b = 8`), la même taille de série (`k = 4`) et les mêmes règles de randomisation (`N = 8, k = 4, r = 4`). **Aucune variante lexicale (`1B`, `2B`, `7B`, `8B`) n'y figure.** La **seule variable expérimentale** est le moment et le mode de découverte des huit domaines.
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Paramètre du dispositif | Support A — Panorama préalable | Support B — Découverte progressive | Équivalence vérifiée |
 |---|---|---|---|
-| **Catalogue de domaines** | 8 domaines `DOM-01`..`DOM-08` (`L11` § 2 uniquement) | 8 domaines `DOM-01`..`DOM-08` (`L11` § 2 uniquement) | **Identique** |
+| **Catalogue de domaines** | 8 domaines `DOM-01`..`DOM-08` (`L11` uniquement) | 8 domaines `DOM-01`..`DOM-08` (`L11` uniquement) | **Identique** |
 | **Variantes lexicales `1B/2B/7B/8B`** | Absentes pendant tout l'exercice | Absentes pendant tout l'exercice | **Identique** |
 | **Information disponible sur les périmètres** | Intitulé + description courte sur l'écran Panorama + volet dépliable/fiche « Périmètre complet des 8 domaines » | Intitulé + description courte sur chaque carte + bouton permanent/classeur « Voir le périmètre complet des 8 domaines » | **Identique** |
 | **Exposition initiale avant la Série 1** | **Affichage d'emblée des 8 domaines** (ordre aléatoire par participant) + consigne | **Affichage de la consigne seule** (sans liste préalable des 8 domaines) | **Variable testée** |
@@ -55,31 +55,33 @@ Conformément à [`PILOT_DECISION.md`](file:///c:/Users/kipik/Dev/civic-explorer
 
 > **Interdit méthodologique rappelé par `PILOT_DECISION.md` :** ne jamais re-mélanger arbitrairement les 8 blocs par une permutation quelconque $\sigma \in S_8$, car cela brise la contrainte `chevauchement consécutif = 1` (et en version papier/statique, ne pas modifier le plan si un participant passe ou signale une carte).
 
-### 2.3 Points insuffisamment documentés dans les sources — À CONFIRMER AVANT PASSATION
+### 2.3 Points à confirmer avant le prétest externe (`12–16` participants) — Périmètre du dry run interne
 
-Les documents sources (`PILOT_DECISION.md`, `L13`, `P1_1_SPECIFICATION_v0.3.md`) ne trancient pas les points opérationnels suivants. **Ils ne doivent pas être inventés silencieusement et doivent être confirmés par le porteur de projet avant de générer les carnets de passation des 12 à 16 participants :**
+> **Portée de la décision de dry run interne :** pour la **répétition interne à blanc uniquement** (`DR-INST-1` et `DR-INST-2`, voir [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md)), le dispositif autorisé utilise le **support papier**, la **disposition en grille `2×2`** et le **livret de périmètre complet accessible** posé fermé sur la table dès `2A`/`2B`. En revanche, les choix ci-dessous **restent ouverts et non approuvés définitivement pour le futur prétest externe** (règle d'appariement A/B, stratification, protocole de randomisation définitif et médium final).
 
-1. **Mode d'appariement des tirages MaxDiff entre Variante A et Variante B :**
-   - `L13` § 1.3 indique d'utiliser la séquence canonique avec *« bijection aléatoire différente d'un participant à l'autre »*, sans préciser si les participants de la **Variante A** et de la **Variante B** doivent recevoir :
+Les documents sources (`PILOT_DECISION.md`, `L13`, `P1_1_SPECIFICATION_v0.3.md`) ne trancient pas les points opérationnels suivants pour le prétest externe. **Ils ne doivent pas être tenus pour approuvés sans décision explicite avant de générer les carnets définitifs des 12 à 16 participants :**
+
+1. **Mode d'appariement des tirages MaxDiff entre Variante A et Variante B (non approuvé pour le prétest externe) :**
+   - `L13` § 1.3 indique d'utiliser la séquence canonique avec *« bijection aléatoire différente d'un participant à l'autre »*, sans trancher pour le prétest externe entre :
      - **Option 1 (appariement par paires A/B) :** 6 à 8 instances $(\pi, \tau, s, \delta)$ pré-générées et assignées à l'identique aux paires `(P_A_i, P_B_i)`, de sorte que l'ordre exact de découverte des blocs soit neutralisé entre les deux bras ;
      - **Option 2 (tirage indépendant par participant) :** 12 à 16 instances $(\pi, \tau, s, \delta)$ distinctes tirées indépendamment pour chaque participant.
-   - **Point complémentaire :** `PILOT_DECISION.md` documente la graine de base `20261110` pour les 1 000 essais Monte Carlo de `audit_maxdiff_designs.py`, et `P1_1_SPECIFICATION_v0.3.md` prévoit une graine éphémère en navigateur ; aucune table de graines pré-calculées pour les 12–16 carnets papier/statiques du prétest n'est définie à ce jour. **À confirmer et figer avant impression/préparation des supports.**
+   - **Point complémentaire :** `PILOT_DECISION.md` documente la graine de base `20261110` pour les 1 000 essais Monte Carlo de `audit_maxdiff_designs.py`, et `P1_1_SPECIFICATION_v0.3.md` prévoit une graine éphémère en navigateur ; aucune table de graines définitives pour les 12–16 carnets externes n'est approuvée à ce jour. *(Seules les deux instances internes d'essai `DR-INST-1` et `DR-INST-2` sont autorisées pour le dry run.)*
 
 2. **Règle d'ordre du bouton/volet « Périmètre complet des 8 domaines » en Variante B :**
    - `L13` § 1.1 précise que les 8 domaines du Panorama préalable (**Variante A**) sont affichés dans un *« ordre aléatoire par participant »* (tandis que `P1_1_SPECIFICATION_v0.3.md` § 5.1 mentionne *« ordre aléatoire par session ou ordre thématique équilibré sans hiérarchie visuelle »*).
-   - `L13` ne précise pas explicitement si le volet consultable *« Voir le périmètre complet des 8 domaines »* de la **Variante B** adopte exactement le même tirage d'ordre aléatoire par participant que la Variante A. **Recommandation à confirmer :** appliquer exactement la même règle d'ordre aléatoire (ex. permutation aléatoire $\rho \in S_8$ propre au participant, sans numérotation `1..8`) pour garantir la stricte comparabilité des deux supports.
+   - Pour le dry run interne (`DR-INST-1` et `DR-INST-2`), le livret partagé utilise la même permutation $\rho \in S_8$ sans numérotation `1..8` ; pour le futur prétest externe, ce choix reste **à confirmer** au même titre que la règle d'appariement.
 
 3. **Affichage initial des notes de périmètre dans le Panorama A vs volet d'aide B :**
    - `L13` § 1.1 prévoit en Variante A les *« intitulés et descriptions courtes `L11`, ordre aléatoire par participant, avec volet dépliable facultatif pour la note de périmètre »*.
-   - À confirmer pour la maquette statique ou papier : dans le Panorama A comme dans le volet complet B, les fiches affichent-elles par défaut **Intitulé + Description courte** avec accès à la note de périmètre détaillée (repliée/annexe sur demande), ou bien les notes de périmètre sont-elles visibles directement dans un livret identique ? *(Pour maintenir l'égalité d'information, le même niveau de déploiement par défaut doit être retenu en A et en B.)*
+   - Pour le dry run interne sur support papier, les pages `2A`/`2B` n'affichent pas la note détaillée et le **même livret fermé** est posé sur la table dès `2A`/`2B` ; pour un éventuel support numérique lors du prétest externe, ce choix de déploiement symétrique reste à confirmer.
 
 4. **Disposition spatiale des 4 cartes (`k = 4`) :**
-   - `PILOT_DECISION.md` équilibre les positions `1..4` via $\tau \in S_4$, mais ni `PILOT_DECISION.md` ni `L13` ne fixent si les 4 cartes sont disposées en **grille 2×2** ou en **liste verticale 1×4** sur le support de prétest. **À figer de manière identique entre A et B.**
+   - `PILOT_DECISION.md` équilibre les positions `1..4` via $\tau \in S_4$, sans fixer définitivement la disposition dans la spec V0.3. Pour le **dry run interne**, la **grille `2×2`** (`Pos 1 = HG`, `Pos 2 = HD`, `Pos 3 = BG`, `Pos 4 = BD`) est autorisée et matérialisée de façon strictement identique en A et en B ; son maintien pour le prétest externe (ou sur écran) sera réexaminé après le bilan du dry run.
 
 5. **Médium matériel et niveau de fidélité des contrôles d'interface :**
-   - `L13` § 1.3 autorise soit une maquette HTML/Figma statique locale hors ligne, soit des cartes imprimées standardisées.
-   - Si le prétest utilise du papier (cartes imprimées), préciser comment sont matérialisés de façon neutre : le retour en arrière sur la série précédente (`P1_1_SPECIFICATION_v0.3.md` § 5.1), les 4 motifs facultatifs de `no_distinguishable_best_worst` (`equally_prioritized`, `not_comparable`, `none_should_take_precedence`, `other`), et le signalement orthogonal `ItemComprehensionFlag` (`too_vague`, `incomprehensible`, `outside_collective_scope`, `loaded_wording`).
-   - Signalement de cohérence sur les libellés des pôles Best/Worst : `P1_1_SPECIFICATION_v0.3.md` § 5.1 évoquait deux variantes possibles (*« Devrait recevoir le plus d'attention »* / *« Plus d'attention en premier »* et *« Pourrait attendre »* / *« Dans un second temps »*). Conformément à `L13` § 2.2, les supports ci-dessous utilisent exclusivement **« Devrait recevoir le plus d'attention »** et **« Pourrait attendre »** (confirmer qu'aucune autre variante de libellé de bouton n'est testée dans ce lot).
+   - `L13` § 1.3 autorise soit une maquette HTML/Figma statique locale hors ligne, soit des cartes imprimées standardisées. Le **support papier** est retenu pour le dry run interne ; le choix définitif du médium pour le prétest externe reste ouvert après retour du dry run.
+   - Sur le support papier, sont matérialisés de façon neutre : le retour en arrière sur la série précédente (`P1_1_SPECIFICATION_v0.3.md` § 5.1), les 4 motifs facultatifs de `no_distinguishable_best_worst` (`equally_prioritized`, `not_comparable`, `none_should_take_precedence`, `other`), et le signalement orthogonal `ItemComprehensionFlag` (`too_vague`, `incomprehensible`, `outside_collective_scope`, `loaded_wording`).
+   - Signalement de cohérence sur les libellés des pôles Best/Worst : `P1_1_SPECIFICATION_v0.3.md` § 5.1 évoquait deux variantes possibles (*« Devrait recevoir le plus d'attention »* / *« Plus d'attention en premier »* et *« Pourrait attendre »* / *« Dans un second temps »*). Conformément à `L13` § 2.2, les supports ci-dessous utilisent exclusivement **« Devrait recevoir le plus d'attention »** et **« Pourrait attendre »** (sans modifier ni figer `P1_1_SPECIFICATION_v0.3.md`).
 
 6. **Écart d'objet expérimental entre `P1_1_SPECIFICATION_v0.3.md` (§ 5.3) et `L13` :**
    - Signalement explicite : `P1_1_SPECIFICATION_v0.3.md` § 5.3 prévoyait un prétest sur `8 à 12` personnes comparant deux *ordres* du parcours (MaxDiff avant vs après expression libre P0.2), alors que `L13` définit un prétest sur `12 à 16` personnes comparant **Variante A (Panorama préalable)** vs **Variante B (Découverte progressive)** à ordre constant (MaxDiff d'abord). Ce kit opérationnel met en œuvre `L13` sans modifier `P1_1_SPECIFICATION_v0.3.md`.
@@ -110,8 +112,8 @@ Les documents sources (`PILOT_DECISION.md`, `L13`, `P1_1_SPECIFICATION_v0.3.md`)
 2. **Écran 2A (spécifique au Support A) — Panorama préalable des huit domaines :**
    - Présente simultanément les **8 domaines** (`DOM-01` à `DOM-08`), dans un **ordre aléatoire tiré pour le participant** (sans numérotation `1..8`, sans hiérarchie visuelle ni regroupement coloré orienté).
    - Chaque bloc du panorama affiche :
-     - l'**Intitulé exact** (`L11` § 2) ;
-     - la **Description courte exacte** (`L11` § 2) ;
+     - l'**Intitulé exact** (`L11`) ;
+     - la **Description courte exacte** (`L11`) ;
      - un accès facultatif et homogène **« Voir le périmètre résumé (inclus / autres domaines) »** (Section 6 ci-dessous) ;
      - une action discrète **« Signaler un problème de formulation »**.
    - **Règle enquêteur :** ne donner aucune explication orale supplémentaire ou exemple politique pendant cette lecture. Laisser le participant lire à son rythme (en notant sur la grille s'il lit tout, survole seulement les titres, ou ouvre les volets de périmètre).
@@ -198,7 +200,7 @@ Les documents sources (`PILOT_DECISION.md`, `L13`, `P1_1_SPECIFICATION_v0.3.md`)
 
 ### 6.1 Gabarit d'une série (`Série [t] sur 8`, pour `t = 1..8`)
 
-Chaque série présente les 4 cartes assignées au bloc $B_t$ après transformation $(\pi, \tau, s, \delta)$, selon une disposition homogène identique entre A et B (aucune barre de « réussite », aucune indication de rang ou d'importance attendue) :
+Chaque série présente les 4 cartes assignées au bloc $B_t$ après transformation $(\pi, \tau, s, \delta)$, selon une disposition homogène identique entre A et B *(sur le support papier `2×2` du dry run interne, `Position 1 = HG`, `Position 2 = HD`, `Position 3 = BG`, `Position 4 = BD` ; aucune barre de « réussite », aucune indication de rang ou d'importance attendue)* :
 
 ```text
 --------------------------------------------------------------------------------
@@ -211,26 +213,26 @@ Rappel : « Pourrait attendre » exprime uniquement une priorité relative dans
 cette série ; cela ne signifie ni que l'enjeu est négligeable, ni que vous
 vous y opposez.
 --------------------------------------------------------------------------------
-[ Position 1 ]  {Intitulé L11 § 2}
-                {Description courte L11 § 2}
+[ Position 1 ]  {Intitulé L11}
+                {Description courte L11}
                 ( ) Devrait recevoir le plus d'attention
                 ( ) Pourrait attendre
                 [Périmètre résumé]  [Signaler un problème de formulation]
 
-[ Position 2 ]  {Intitulé L11 § 2}
-                {Description courte L11 § 2}
+[ Position 2 ]  {Intitulé L11}
+                {Description courte L11}
                 ( ) Devrait recevoir le plus d'attention
                 ( ) Pourrait attendre
                 [Périmètre résumé]  [Signaler un problème de formulation]
 
-[ Position 3 ]  {Intitulé L11 § 2}
-                {Description courte L11 § 2}
+[ Position 3 ]  {Intitulé L11}
+                {Description courte L11}
                 ( ) Devrait recevoir le plus d'attention
                 ( ) Pourrait attendre
                 [Périmètre résumé]  [Signaler un problème de formulation]
 
-[ Position 4 ]  {Intitulé L11 § 2}
-                {Description courte L11 § 2}
+[ Position 4 ]  {Intitulé L11}
+                {Description courte L11}
                 ( ) Devrait recevoir le plus d'attention
                 ( ) Pourrait attendre
                 [Périmètre résumé]  [Signaler un problème de formulation]
@@ -285,7 +287,7 @@ Ce volet est exactement le même document que celui accessible via `[Consulter l
 - **Éducation, formation, recherche et culture**
    - *Description courte :* L'école et les études supérieures, la formation professionnelle à tout âge, la recherche scientifique, ainsi que la vie culturelle et les médias.
    - *Ce que ce domaine couvre :* Couvre l'enseignement scolaire (public, sous contrat ou indépendant), l'orientation, la formation professionnelle et continue des adultes, l'université, la recherche, la culture et l'information — sans présupposer de modèle pédagogique ni de partage public/privé.
-   - *Traité dans d'autres domaines :* Cadre juridique général de la laïcité et lutte contre les discriminations (*Justice, libertés publiques et démocratie*) ; politique de l'emploi (*Économie, travail et finances publiques*) ; garde matérielle de la petite enfance et soutien aux familles (*Santé et solidarités face aux risques de la vie*).
+   - *Traité dans d'autres domaines :* Cadre juridique général de la laïcité et lutte contre les discriminations (*Justice, libertés publiques et démocratie*, *les applications concrètes dans la vie scolaire y sont liées*) ; politique de l'emploi (*Économie, travail et finances publiques*) ; garde matérielle de la petite enfance et soutien aux familles (*Santé et solidarités face aux risques de la vie*).
 
 - **Climat, énergie, environnement et agriculture**
    - *Description courte :* Le climat et les risques naturels, la production et le prix de l'énergie, la gestion de l'eau et de la nature, l'agriculture et l'alimentation.

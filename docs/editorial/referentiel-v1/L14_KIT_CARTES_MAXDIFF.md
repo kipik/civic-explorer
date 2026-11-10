@@ -1,27 +1,23 @@
 # L14 — Kit des huit cartes MaxDiff candidates et des variantes lexicales isolées
 
-**Statut :** **KIT OPÉRATIONNEL DE PRÉTEST COGNITIF — BASE `L11` (`Architecture 1`) — NON VALIDÉ POUR PRODUCTION**  
+**Statut :** **KIT OPÉRATIONNEL HARMONISÉ SUR `L11` (`Architecture 1`) — PRÊT POUR DRY RUN INTERNE — NON VALIDÉ POUR PRODUCTION**  
 **Sources de référence :** [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md), [`L12_ARBITRAGES_EDITORIAUX.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L12_ARBITRAGES_EDITORIAUX.md), [`L13_PROTOCOLE_PRETEST_COGNITIF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L13_PROTOCOLE_PRETEST_COGNITIF.md) et [`P1_1_SPECIFICATION_v0.3.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/P1_1_SPECIFICATION_v0.3.md).
 
 > **Règle d'or de passation :** Les variantes `1B`, `2B`, `7B` et `8B` figurent uniquement en **Annexe isolée (Section 4)**. Elles ne doivent **jamais** être mélangées aux 8 cartes présentées pendant le Panorama préalable (Variante A) ou les 8 séries MaxDiff (Variantes A et B). Elles sont montrées exclusivement en phase finale de débriefing lexical ([`L16_GUIDE_ENQUETEUR.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L16_GUIDE_ENQUETEUR.md) § E).
 
 ---
 
-## 1. Vérification de cohérence et divergences signalées dans les sources
+## 1. Vérification de cohérence et règles de présentation
 
-Avant de figer les supports imprimables ou locaux du prétest, deux écarts factuels relevés à la lecture des sources sont signalés explicitement (sans trancher silencieusement) :
+Les supports participant respectent les règles d'harmonisation éditoriale suivantes (voir la trace des décisions dans [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) § 4) :
 
-1. **Divergences internes à `L11` entre le tableau synoptique (§ 1) et les fiches consolidées (§ 2) :**
-   - **`DOM-02` :** le tableau § 1 indique *« ...le soutien aux entreprises et les choix d'impôts et de budget »*, alors que la fiche § 2 indique *« ...le temps de vie, les entreprises et les choix d'impôts et de budget »* (`27 mots`). Le présent kit retient strictement le texte de la **fiche § 2**, car il correspond au décompte indiqué (`27 mots`), à sa justification explicite (conservation de *« le temps de vie »*) et évite le terme prescriptif *« soutien »* (`P1_1_D1_DECISION_v0.3.md` § 3).
-   - **`DOM-05` :** le tableau § 1 indique *« la production et le coût de l'énergie »*, alors que la fiche § 2 indique *« la production et le prix de l'énergie »* (`24 mots`). Le présent kit retient strictement le texte de la **fiche § 2**, cohérent avec sa justification (*« production et prix de l'énergie »*).
-   - **Action humaine attendue avant passation :** confirmer formellement que les fiches § 2 de `L11` font foi et, le cas échéant, aligner le tableau § 1 de `L11`.
-
-2. **Homogénéisation formelle du périmètre consultable (`L11` § 2 vs `P1_1_SPECIFICATION_v0.3.md` § 5.1) :**
+1. **Homogénéisation formelle du périmètre consultable (`L11` vs `P1_1_SPECIFICATION_v0.3.md` § 5.1) :**
    - Dans `L11` § 2, la *Note de périmètre consultable* de `DOM-06` contient le repère interne `(`DOM-07`)` et cite explicitement des exclusions, alors que les notes des sept autres domaines renvoient les exclusions au tableau § 1.
-   - Pour préserver une symétrie rédactionnelle absolue entre les huit cartes sans exposer de codes éditoriaux internes (`DOM-01`..`DOM-08`, `E01`..`E68`) au participant (`03_DATA_MODEL.md` § 6 et `P1_1_SPECIFICATION_v0.3.md` § 6.5), la **face carte MaxDiff** reste identique mot pour mot à `L11` § 2, et le **volet Périmètre résumé consultable** présente sur chaque carte la note exacte de `L11` § 2 suivie des exclusions de `L11` § 1 traduites avec les intitulés complets des domaines (et en remplaçant `(`DOM-07`)` par `(domaine Justice, libertés publiques et démocratie)` dans `DOM-06`).
+   - Pour préserver une symétrie rédactionnelle absolue entre les huit cartes sans exposer de codes éditoriaux internes (`DOM-01`..`DOM-08`, `E01`..`E68`) au participant (`03_DATA_MODEL.md` § 6 et `P1_1_SPECIFICATION_v0.3.md` § 6.5), la **face carte MaxDiff** reste identique mot pour mot à `L11`, et le **volet Périmètre résumé consultable** présente sur chaque carte la note exacte de `L11` suivie des exclusions de `L11` § 1 traduites avec les intitulés complets des domaines (et en remplaçant `(`DOM-07`)` par `(domaine Justice, libertés publiques et démocratie)` dans `DOM-06`).
 
-3. **Condition préalable d'autorisation (`P1_1_SPECIFICATION_v0.3.md` § 8.3 Palier 0) :**
-   - La spécification V0.3 subordonne le lancement du prétest cognitif à la validation humaine préalable du jeu de 8 formulations candidates. Les présentes cartes matérialisent le jeu candidat `L11` prêt pour cette validation puis pour les entretiens.
+2. **Distinction dry run interne vs condition d'autorisation du prétest externe (`P1_1_SPECIFICATION_v0.3.md` § 8.3 Palier 0) :**
+   - Les présentes formulations harmonisées (`L11`, avec `DOM-02` = *« le temps de vie, les entreprises »* et `DOM-05` = *« le prix de l'énergie »*) sont autorisées pour le **dry run interne** (dossiers imprimables dans [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md)).
+   - Tout recrutement ou entretien avec des participants extérieurs demeure **bloqué** tant que les conditions de [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) (§ 5–7) et [`L18_CONSENTEMENT_ET_ANONYMISATION.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L18_CONSENTEMENT_ET_ANONYMISATION.md) ne sont pas levées.
 
 ---
 
@@ -34,10 +30,10 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 - **Absence de numérotation hiérarchique visible (`1` à `8`) :** ne jamais afficher `DOM-01`..`DOM-08` en tête de carte chez le participant pour éviter tout biais d'ordre ou de rang implicite. Un repère technique discret (au verso d'une carte papier ou en pied technique discret de type `[Réf. DOM-01]`) sert uniquement à la saisie d'observation.
 - **Même hiérarchie typographique sur les 8 cartes :**
   1. **Intitulé** (en gras, corps homogène, sur 1–2 lignes maximum).
-  2. **Description courte** (formulation exacte `L11` § 2, 22 à 28 mots, sans parenthèses ajoutées, sans puces asymétriques, sans exemple ajouté).
+  2. **Description courte** (formulation exacte `L11`, 21 à 30 mots en unités séparées par des espaces, sans parenthèses ajoutées, sans puces asymétriques, sans exemple ajouté).
   3. **Action / repère de périmètre neutre** (*« Voir le périmètre résumé de ce domaine »*, replié ou sur fiche annexe identique pour toutes les cartes).
 - **Périmètre résumé consultable (gabarit symétrique) :**
-  1. **Ce que ce domaine couvre :** texte exact de la *Note de périmètre consultable* (`L11` § 2).
+  1. **Ce que ce domaine couvre :** texte exact de la *Note de périmètre consultable* (`L11`).
   2. **Ce qui est traité dans d'autres domaines :** exclusions principales issues de `L11` § 1, rédigées en clair sans codes `E` ni `DOM-XX`.
 
 ### 2.2 Consignes de lecture communes (Support A et Support B)
@@ -55,8 +51,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-01`
-- **Intitulé (`L11` § 2) :** Santé et solidarités face aux risques de la vie
-- **Description courte (`L11` § 2, 28 mots) :** L'accès aux soins et la prévention, ainsi que les aides et protections face aux retraites, à la perte d'autonomie, au handicap, au chômage, à la pauvreté et pour les familles.
+- **Intitulé (`L11`) :** Santé et solidarités face aux risques de la vie
+- **Description courte (`L11`, 30 mots) :** L'accès aux soins et la prévention, ainsi que les aides et protections face aux retraites, à la perte d'autonomie, au handicap, au chômage, à la pauvreté et pour les familles.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E12`–`E24`, `E66` *(14 primaires)*.
 - **Vigilance prétest :** vérifier si la carte est réduite mentalement aux seuls soins médicaux ou aux seules retraites (sélection mono-composante), et si le terme *« solidarités »* est perçu comme neutre ou orienté. Variante isolée disponible pour le débriefing lexical : **`1B`**.
 
@@ -84,8 +80,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-02`
-- **Intitulé (`L11` § 2) :** Économie, travail et finances publiques
-- **Description courte (`L11` § 2, 27 mots) :** Le pouvoir d'achat et les salaires, l'organisation du travail et des activités non rémunérées, le temps de vie, les entreprises et les choix d'impôts et de budget.
+- **Intitulé (`L11`) :** Économie, travail et finances publiques
+- **Description courte (`L11`, 27 mots) :** Le pouvoir d'achat et les salaires, l'organisation du travail et des activités non rémunérées, le temps de vie, les entreprises et les choix d'impôts et de budget.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E01`–`E11`, `E65`, `E68` *(13 primaires)*.
 - **Vigilance prétest :** vérifier la compréhension de *« finances publiques »* et d'*« activités non rémunérées »*, ainsi que l'éventuelle capture exclusive par *« pouvoir d'achat »* ou *« impôts/dette »*. Variante isolée disponible pour le débriefing lexical : **`2B`**.
 
@@ -113,8 +109,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-03`
-- **Intitulé (`L11` § 2) :** Logement, territoires et mobilités
-- **Description courte (`L11` § 2, 23 mots) :** L'accès au logement et ses coûts, les différentes manières d'habiter, les déplacements du quotidien et l'équilibre entre villes, campagnes et outre-mer.
+- **Intitulé (`L11`) :** Logement, territoires et mobilités
+- **Description courte (`L11`, 21 mots) :** L'accès au logement et ses coûts, les différentes manières d'habiter, les déplacements du quotidien et l'équilibre entre villes, campagnes et outre-mer.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E25`–`E30`, `E67` *(7 primaires)*.
 - **Vigilance prétest :** observer les chevauchements perçus avec `DOM-05` (rénovation thermique, transports propres, sols) et avec `DOM-07` (pouvoirs des collectivités locales). Aucune variante lexicale dédiée.
 
@@ -141,8 +137,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-04`
-- **Intitulé (`L11` § 2) :** Éducation, formation, recherche et culture
-- **Description courte (`L11` § 2, 22 mots) :** L'école et les études supérieures, la formation professionnelle à tout âge, la recherche scientifique, ainsi que la vie culturelle et les médias.
+- **Intitulé (`L11`) :** Éducation, formation, recherche et culture
+- **Description courte (`L11`, 22 mots) :** L'école et les études supérieures, la formation professionnelle à tout âge, la recherche scientifique, ainsi que la vie culturelle et les médias.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E31`–`E37` *(7 primaires)*.
 - **Vigilance prétest :** vérifier si *« école »* occulte la formation des adultes, la recherche ou la culture/médias, et observer où le participant cherche la *laïcité* (`DOM-04` vs `DOM-07`). Aucune variante lexicale dédiée.
 
@@ -169,8 +165,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-05`
-- **Intitulé (`L11` § 2) :** Climat, énergie, environnement et agriculture
-- **Description courte (`L11` § 2, 24 mots) :** Le climat et les risques naturels, la production et le prix de l'énergie, la gestion de l'eau et de la nature, l'agriculture et l'alimentation.
+- **Intitulé (`L11`) :** Climat, énergie, environnement et agriculture
+- **Description courte (`L11`, 24 mots) :** Le climat et les risques naturels, la production et le prix de l'énergie, la gestion de l'eau et de la nature, l'agriculture et l'alimentation.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E39`–`E45` *(7 primaires)*.
 - **Vigilance prétest :** observer les sélections mono-composantes (par exemple choisir la carte uniquement pour la facture d'énergie/nucléaire ou uniquement pour l'agriculture ou le climat) et les éventuelles connotations sur *« climat »* ou *« environnement »*. Aucune variante lexicale dédiée.
 
@@ -197,8 +193,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-06`
-- **Intitulé (`L11` § 2) :** Sécurité des personnes et tranquillité publique
-- **Description courte (`L11` § 2, 24 mots) :** La prévention de la délinquance et des violences, la sûreté au quotidien, l'action et le contrôle des forces de sécurité et les sanctions pénales.
+- **Intitulé (`L11`) :** Sécurité des personnes et tranquillité publique
+- **Description courte (`L11`, 24 mots) :** La prévention de la délinquance et des violences, la sûreté au quotidien, l'action et le contrôle des forces de sécurité et les sanctions pénales.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E46`–`E48` *(3 primaires)*.
 - **Vigilance prétest :** observer si la frontière avec `DOM-07` (sanctions pénales vs fonctionnement des tribunaux et libertés publiques) et avec `DOM-08` (frontières) est claire, et si le périmètre plus resserré de `DOM-06` crée un sentiment d'incomparabilité face à `DOM-01` ou `DOM-02`. Aucune variante lexicale dédiée.
 
@@ -225,8 +221,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-07`
-- **Intitulé (`L11` § 2) :** Justice, libertés publiques et démocratie
-- **Description courte (`L11` § 2, 28 mots) :** Le fonctionnement de la justice, la protection des droits et libertés (y compris numériques), la laïcité et l'égalité des droits, ainsi que les institutions et la participation citoyenne.
+- **Intitulé (`L11`) :** Justice, libertés publiques et démocratie
+- **Description courte (`L11`, 28 mots) :** Le fonctionnement de la justice, la protection des droits et libertés (y compris numériques), la laïcité et l'égalité des droits, ainsi que les institutions et la participation citoyenne.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E38`, `E49`–`E56`, `E64` *(10 primaires)*.
 - **Vigilance prétest :** vérifier si les 4 composantes (justice, libertés/numérique, laïcité/égalité, institutions/participation) sont reconnues ou si la carte paraît trop abstraite, réduite aux seuls tribunaux ou au seul vote, et vérifier le repérage de la laïcité. Variante isolée disponible pour le débriefing lexical : **`7B`**.
 
@@ -253,8 +249,8 @@ Toutes les cartes respectent exactement le même gabarit sur le support particip
 
 #### Métadonnées éditoriales (usage enquêteur et analyste uniquement)
 - **Identifiant du domaine :** `DOM-08`
-- **Intitulé (`L11` § 2) :** Place de la France en Europe et dans le monde
-- **Description courte (`L11` § 2, 24 mots) :** L'Union européenne et la souveraineté nationale, la défense et l'action diplomatique, les échanges commerciaux, ainsi que la gestion des frontières et des migrations.
+- **Intitulé (`L11`) :** Place de la France en Europe et dans le monde
+- **Description courte (`L11`, 23 mots) :** L'Union européenne et la souveraineté nationale, la défense et l'action diplomatique, les échanges commerciaux, ainsi que la gestion des frontières et des migrations.
 - **Sous-enjeux `L01`/`L05` rattachés :** `E57`–`E63` *(7 primaires)*.
 - **Vigilance prétest :** vérifier si un seul pôle (en particulier *« frontières et migrations »* ou *« Union européenne »*) capture toute la lecture au détriment de la défense, de la diplomatie et du commerce extérieur. Variante isolée disponible pour le débriefing lexical : **`8B`**.
 

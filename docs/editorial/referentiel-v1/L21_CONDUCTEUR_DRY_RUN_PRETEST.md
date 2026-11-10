@@ -1,6 +1,6 @@
 # L21 — Conducteur opérationnel de répétition interne à blanc (Dry Run du prétest `L13`)
 
-**Statut :** **`CONDUCTEUR PRÊT — DRY RUN RÉALISABLE SOUS CONDITIONS`** *(répétition exclusivement interne à l'équipe ; **zéro recrutement externe, zéro entretien réel, aucune modification de `src/` ni de `P1_1_SPECIFICATION_v0.3.md`, aucune déclaration de conformité juridique/RGPD et aucune prétention de validation scientifique**).*  
+**Statut :** **`DRY RUN INTERNE AUTORISÉ — DOSSIERS IMPRIMABLES ET CONSIGNES PRÊTS`** *(répétition exclusivement interne à l'équipe ; **zéro recrutement externe, zéro entretien avec des participants extérieurs, aucune modification de `src/` ni de `P1_1_SPECIFICATION_v0.3.md`, aucune approbation définitive des règles du futur prétest externe, aucune déclaration de conformité juridique/RGPD et aucune prétention de validation scientifique**).*  
 **Date :** 10 novembre 2026  
 **Documents de référence :** [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md), [`L12_ARBITRAGES_EDITORIAUX.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L12_ARBITRAGES_EDITORIAUX.md), [`L13_PROTOCOLE_PRETEST_COGNITIF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L13_PROTOCOLE_PRETEST_COGNITIF.md), [`L14_KIT_CARTES_MAXDIFF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L14_KIT_CARTES_MAXDIFF.md), [`L15_SUPPORTS_PRESENTATION_VARIANTES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L15_SUPPORTS_PRESENTATION_VARIANTES.md), [`L16_GUIDE_ENQUETEUR.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L16_GUIDE_ENQUETEUR.md), [`L17_GRILLE_OBSERVATION_ENTRETIENS.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L17_GRILLE_OBSERVATION_ENTRETIENS.md), [`L18_CONSENTEMENT_ET_ANONYMISATION.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L18_CONSENTEMENT_ET_ANONYMISATION.md), [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md), [`PILOT_DECISION.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/experiments/maxdiff/PILOT_DECISION.md), [`audit_maxdiff_designs.py`](file:///c:/Users/kipik/Dev/civic-explorer/docs/experiments/maxdiff/audit_maxdiff_designs.py) et [`designs_N6_to_N13.json`](file:///c:/Users/kipik/Dev/civic-explorer/docs/experiments/maxdiff/designs_N6_to_N13.json).
 
@@ -12,27 +12,28 @@
 
 ---
 
-## 1. Relevé de décision éditorial préparatoire (`DOM-02` et `DOM-05`) — En attente de validation finale
+## 1. Relevé de décision éditorial (`DOM-02` et `DOM-05`) — Arbitré et harmonisé `[DÉCISION ACTÉE]`
 
-### 1.1 Orientations soumises à validation finale `[PROPOSITION À VALIDER]`
+### 1.1 Décisions éditoriales validées et appliquées `[DÉCISION ACTÉE]`
 
-Pour lever la divergence interne relevée dans [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) (§ 4, lignes 1–2) sans toucher à aucun autre domaine (`DOM-01`, `DOM-03`, `DOM-04`, `DOM-06`, `DOM-07`, `DOM-08`), les orientations suivantes sont préparées et **soumises à validation finale avant application dans `L11`, `L14` et `L15`** :
+Par décision du 10/11/2026 tranchant la divergence relevée dans [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) (§ 4) sans modifier aucun autre domaine (`DOM-01`, `DOM-03`, `DOM-04`, `DOM-06`, `DOM-07`, `DOM-08`), les formulations de `L11` § 2 ont été validées :
 
-1. **`DOM-02` :** retenir la formulation `L11` § 2 — *« Le pouvoir d'achat et les salaires, l'organisation du travail et des activités non rémunérées, **le temps de vie, les entreprises** et les choix d'impôts et de budget. »* (`27 mots`), et abandonner la variante `L11` § 1 (*« le soutien aux entreprises »*).
-2. **`DOM-05` :** retenir la formulation `L11` § 2 — *« Le climat et les risques naturels, la production et **le prix de l'énergie**, la gestion de l'eau et de la nature, l'agriculture et l'alimentation. »* (`24 mots`), et abandonner la variante `L11` § 1 (*« le coût de l'énergie »*).
+1. **`DOM-02` :** formulation retenue — *« Le pouvoir d'achat et les salaires, l'organisation du travail et des activités non rémunérées, **le temps de vie, les entreprises** et les choix d'impôts et de budget. »* (`27 mots`).
+2. **`DOM-05` :** formulation retenue — *« Le climat et les risques naturels, la production et **le prix de l'énergie**, la gestion de l'eau et de la nature, l'agriculture et l'alimentation. »* (`24 mots`).
 
-> **État actuel dans le dépôt `[FAIT VÉRIFIÉ]` :** Conformément à la consigne, **aucun fichier parmi `L11`, `L14` et `L15` n'a encore été modifié**. Les cartes participant de [`L14_KIT_CARTES_MAXDIFF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L14_KIT_CARTES_MAXDIFF.md) (lignes 88, 96, 173, 181, 302) et les écrans/volets de [`L15_SUPPORTS_PRESENTATION_VARIANTES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L15_SUPPORTS_PRESENTATION_VARIANTES.md) (lignes 134, 146, 276, 291) utilisent déjà mot pour mot les formulations `L11` § 2.
+> **État actuel dans le dépôt `[FAIT VÉRIFIÉ]` :** Les harmonisations documentaires ont été **appliquées** dans `L11`, `L13`, `L14` et `L15` (et tracées dans `L20` § 4.2), sans altérer les formulations détaillées des huit domaines ni modifier aucun autre domaine. L'audit des décomptes de mots en unités séparées par des espaces a également corrigé `DOM-01` (`30 mots`), `DOM-03` (`21 mots`) et `DOM-08` (`23 mots`) dans `L11` et `L14`, et aligné le renvoi `DOM-04` de `L15` § 7 sur `L14` § 3.
 
-### 1.2 Modifications d'harmonisation préparées (non appliquées tant que non validées)
+### 1.2 Harmonisations appliquées dans le référentiel
 
-| Fichier | Emplacement exact | Avant (état actuel vérifié) | Après (modification préparée après validation) | Nature de l'édition |
+| Fichier | Emplacement exact | Avant harmonisation | Après harmonisation appliquée | Nature de l'édition |
 |---|---|---|---|---|
-| [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md) | § 1, ligne 14 (`DOM-02`, col. *Description courte*) | `...l'organisation du travail et des activités non rémunérées, le soutien aux entreprises et les choix d'impôts et de budget.` | `...l'organisation du travail et des activités non rémunérées, le temps de vie, les entreprises et les choix d'impôts et de budget.` | Alignement strict du tableau § 1 sur `L11` § 2. |
-| [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md) | § 1, ligne 17 (`DOM-05`, col. *Description courte*) | `...la production et le coût de l'énergie, la gestion de l'eau...` | `...la production et le prix de l'énergie, la gestion de l'eau...` | Alignement strict du tableau § 1 sur `L11` § 2 *(cohérent avec col. 4 « prix de l'énergie (`E41`) »)*. |
-| [`L14_KIT_CARTES_MAXDIFF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L14_KIT_CARTES_MAXDIFF.md) | § 1 point 1, lignes 14–17 | Signalement d'écart interne `L11` § 1 vs § 2 et *« Action humaine attendue avant passation : confirmer formellement que les fiches § 2 de L11 font foi... »* | Remplacer par une note d'historique actée : *« Harmonisation validée : le tableau § 1 de L11 a été aligné sur les fiches § 2 pour `DOM-02` (« le temps de vie, les entreprises ») et `DOM-05` (« le prix de l'énergie »). »* | Mise à jour documentaire uniquement ; **aucune modification des 8 cartes ni de la Section 4 (`1B`, `2B`, `7B`, `8B`)**. |
-| [`L15_SUPPORTS_PRESENTATION_VARIANTES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L15_SUPPORTS_PRESENTATION_VARIANTES.md) | En-tête (§ 0, ligne 7) et mentions `(L11 § 2)` (lignes 15, 113–114, 201, 214–236) | Mentions renvoyant spécifiquement à `L11 § 2` (choix provisoire en attente d'arbitrage § 1 vs § 2) | Ajouter une note actant l'alignement `L11` § 1 = `L11` § 2 sur `DOM-02` et `DOM-05` et remplacer les références `L11 § 2` par `L11` *(consolidé harmonisé)* ; conserver à l'identique les textes des lignes 134, 146, 276, 291. *(Optionnel selon validation : refléter aussi la disposition `2×2` retenue pour le dry run en § 2.3 point 4 et § 6.1.)* | Mise en cohérence des références sans modifier aucun libellé participant des 8 domaines. |
+| [`L11_FORMULATIONS_CONSOLIDEES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L11_FORMULATIONS_CONSOLIDEES.md) | § 1 (`DOM-02`, `DOM-05`) et § 2 (`DOM-01`, `DOM-03`, `DOM-08`) | Écarts § 1 (`soutien aux entreprises`, `coût de l'énergie`) vs § 2 ; décomptes inexacts sur `DOM-01` (`28`), `DOM-03` (`23`), `DOM-08` (`24`). | Tableau § 1 aligné sur § 2 (`le temps de vie, les entreprises` ; `le prix de l'énergie`) ; décomptes corrigés (`30`, `21`, `23` mots) sans changer le texte des 8 domaines. | Harmonisation § 1 = § 2 et vérification factuelle des décomptes. |
+| [`L13_PROTOCOLE_PRETEST_COGNITIF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L13_PROTOCOLE_PRETEST_COGNITIF.md) | En-tête (ligne 4) | Réserve *« sous réserve d'arbitrage humain sur les écarts § 1 / § 2 pour `DOM-02` et `DOM-05` »*. | Réserve obsolète supprimée ; mention de l'arbitrage appliqué (recrutement toujours bloqué). | Suppression d'une note de divergence devenue obsolète. |
+| [`L14_KIT_CARTES_MAXDIFF.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L14_KIT_CARTES_MAXDIFF.md) | § 1, § 2.1, § 3 | Note de divergence § 1 vs § 2 en § 1 ; plage `22 à 28 mots` ; décomptes `28/23/24` sur `DOM-01/03/08`. | Note de divergence obsolète supprimée ; décomptes alignés (`21 à 30 mots` ; `30/21/23`) ; références `L11 § 2` unifiées vers `L11` ; textes des 8 cartes et Section 4 inchangés. | Suppression de note obsolète et alignement des métadonnées. |
+| [`L15_SUPPORTS_PRESENTATION_VARIANTES.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L15_SUPPORTS_PRESENTATION_VARIANTES.md) | En-tête, § 1, § 2.3, § 4, § 6.1, § 7 | Mentions `L11 § 2` ; omission dans `DOM-04` § 7 de *« (les applications concrètes dans la vie scolaire y sont liées) »*. | Références `L11` unifiées ; § 2.3 recadré (dry run papier `2×2` autorisé vs points prétest externe non approuvés) ; renvoi `DOM-04` aligné sur `L14` § 3 ; identité stricte des textes participant vérifiée. | Mise en cohérence et identité stricte des supports A/B. |
+| [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) | § 2, § 3.4–3.5, § 4.1–4.2, § 5, § 7, § 8 | `DOM-02`/`DOM-05` en attente d'arbitrage. | Arbitrages et trace des changements consignés (§ 4.1–4.2) ; réexamen stratification ajouté (§ 3.5) ; statut mis à jour. | Journal des décisions et verrouillage. |
 
-*(Précision de périmètre : les colonnes analytiques internes de `L11` — ligne 17 col. 6 « Risque de compréhension » et ligne 92 « Justification » — restent inchangées ; aucun texte de `DOM-01`, `DOM-03`, `DOM-04`, `DOM-06`, `DOM-07`, `DOM-08` n'est modifié.)*
+*(Précision de périmètre : les colonnes analytiques internes de `L11` — col. 6 « Risque de compréhension » et § 2 « Justification » — restent inchangées ; aucun texte des domaines `DOM-01`, `DOM-03`, `DOM-04`, `DOM-06`, `DOM-07`, `DOM-08` n'a été modifié.)*
 
 ### 1.3 Conséquences précises de ces décisions
 
@@ -57,18 +58,29 @@ Pour lever la divergence interne relevée dans [`L20_VERROUILLAGE_PROTOCOLE_PRET
 3. **Éléments absents du dépôt `[INFORMATION MANQUANTE]` :**
    - Aucun script ni fichier JSON/CSV du dépôt ne définit : (a) une table d'affectation A/B pour `12–16` participants, (b) une règle d'appariement inter-bras des blocs MaxDiff, (c) un générateur d'ordre $\rho \in S_8$ pour le Panorama A / volet B, ni (d) une table de graines pré-allouées pour des entretiens hors ligne.
 
-### 2.2 Proposition de référence pour la répartition A/B (`n = 12` à `16`) `[PROPOSITION À VALIDER]`
+### 2.2 Propositions de travail pour la répartition A/B du futur prétest (`n = 12` à `16`) — **`[NON APPROUVÉES — À RÉEXAMINER]`**
 
-Sur la base de [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L20_VERROUILLAGE_PROTOCOLE_PRETEST.md) (§ 3.4 Option A1), la proposition de référence est une **randomisation par blocs permutés équilibrés de taille 2 (`AB` ou `BA`), stratifiée sur un critère binaire simple** :
+> **Avertissement bloquant :** L'autorisation du dry run interne **ne vaut approbation définitive d'aucune règle** de stratification sociodémographique A/B, d'appariement des blocs entre A et B, ni du protocole de randomisation définitif du futur prétest externe. Les éléments de cette section demeurent **des propositions non actées soumises à réexamen**.
 
-- **Stratification réaliste pour `n = 12..16` :** croiser les 4 critères de `L13` § 1.2 (âge × territoire × diplôme/aisance × rapport au politique) produirait des dizaines de cellules vides. Il est donc proposé de stratifier uniquement sur **un critère binaire lié au risque principal du prétest cognitif** :
-  - **Strate `ST1` :** sans diplôme de l'enseignement supérieur *ou* faible aisance déclarée avec le vocabulaire institutionnel ;
-  - **Strate `ST2` :** diplôme du supérieur *et* aisance moyenne à élevée.
-  *(Les autres critères — âge, territoire, rapport au politique — restent suivis en recrutement ciblé dans le tableau [`L19`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/L19_MODELE_SYNTHESE_PRETEST.md) § 1.1 sans créer de micro-strates rigides.)*
-- **Mécanisme dans chaque strate :** suite pré-générée de micro-blocs de taille `2` (`AB` ou `BA`, tirés chacun avec probabilité `1/2` avant ouverture du recrutement), garantissant qu'au sein de chaque strate l'écart $|n_A - n_B|$ ne dépasse jamais `1` à aucun moment de l'enrôlement.
-- **Vigilance mathématique sur les effectifs par strate :** avec deux strates indépendantes, si *les deux* strates s'arrêtaient simultanément sur un effectif impair (ex. `5` en `ST1` et `7` en `ST2` pour `n = 12`), l'écart total atteindrait au pire `2` (`7 vs 5` ou `8 vs 6`) si les deux derniers slots tiraient la même lettre. **Garde-fou simple :** viser un effectif pair dans chaque strate aux paliers pairs (ex. `6 + 6` pour `12`, `6 + 8` ou `8 + 6` pour `14`, `8 + 8` pour `16`) ou n'autoriser qu'au plus une strate impaire lors des arrêtés à `13` ou `15`.
+#### Réexamen critique de la stratification « sans diplôme supérieur / faible aisance »
 
-#### Tableau des effectifs pour les cas `n = 12, 13, 14, 15, 16`
+La proposition initiale envisagée lors de la rédaction de `L21` consistait à définir deux strates binaires fusionnées :
+- *Ancienne proposition `ST1` (non retenue en l'état) :* sans diplôme de l'enseignement supérieur **ou** faible aisance déclarée avec le vocabulaire institutionnel ;
+- *Ancienne proposition `ST2` (non retenue en l'état) :* diplôme du supérieur **et** aisance moyenne à élevée.
+
+**Pourquoi ces deux caractéristiques ne sont pas équivalentes et ne doivent pas être fusionnées sans justification :**
+1. **Séparation conceptuelle :** le *niveau de diplôme* (parcours scolaire ou universitaire) et *l'aisance avec le vocabulaire institutionnel* (familiarité avec les termes de la vie publique) relèvent de dimensions distinctes. Une personne sans diplôme du supérieur peut posséder une excellente maîtrise du débat public ; à l'inverse, une personne diplômée du supérieur (ex. filière scientifique, technique ou peu politisée) peut éprouver une gêne réelle devant des termes comme *« finances publiques »* ou *« État de droit »*.
+2. **Biais de fusion `OU` / `ET` :** réunir par un `OU` logique deux profils hétérogènes dans `ST1` empêche d'isoler ce sur quoi porte l'équilibre A/B et risque de déséquilibrer fortement les effectifs entre strates sur `n = 12–16`.
+3. **Problème de recueil avant séance :** autant le diplôme peut être déclaré simplement avant assignation, autant l'aisance face au vocabulaire institutionnel ne dispose d'aucun indicateur pré-séance validé et risque d'être intrusive ou approximative lors de la prise de contact.
+
+**Options distinctes à arbitrer avant tout recrutement externe *(aucune n'est actée)* :**
+- **Piste 1 — Critère unique objectif de stratification (ex. diplôme) + suivi séparé de l'aisance :** si une stratification par micro-blocs de taille 2 (`AB`/`BA`) est retenue, stratifier uniquement sur le niveau de diplôme (*sans diplôme du supérieur* vs *diplôme du supérieur*), tout en consignant séparément l'aisance perçue dans `L17` § 4.1 et en contrôlant sa répartition dans `L19` § 1.1.
+- **Piste 2 — Critère unique de littératie civique/aisance (si justifié explicitement) :** concevoir un indicateur court, neutre et non stigmatisant distinct du diplôme, sans fusionner les deux variables.
+- **Piste 3 — Tirage équilibré sans stratification composite :** recourir à des micro-blocs `AB`/`BA` non stratifiés (ou à une liste de slots équilibrés) avec suivi séparé des 4 axes de diversification `L13` § 1.2 (`âge`, `territoire`, `diplôme`, `aisance / rapport au politique`) dans `L19`.
+
+*(Rappel mécanique pour les micro-blocs éventuels de taille 2 : avec deux strates indépendantes, si les deux s'arrêtaient simultanément sur un effectif impair, l'écart maximal $|n_A - n_B|$ atteindrait `2` au lieu de `1`.)*
+
+#### Table de référence indicative des effectifs (dans l'hypothèse de micro-blocs de taille `2`, non actée)
 
 | Effectif total `n` | Répartition cible `A / B` | Structure par micro-blocs de taille `2` | Gestion du cas impair / arrêt | Conformité `L13` (`6–8` / bras) |
 |---:|---|---|---|---:|
@@ -78,7 +90,7 @@ Sur la base de [`L20_VERROUILLAGE_PROTOCOLE_PRETEST.md`](file:///c:/Users/kipik/
 | **`15`** | **`8 A` / `7 B`** *ou* **`7 A` / `8 B`** | `7` paires complètes + `1` slot isolé issu du `8e` micro-bloc (`AB`/`BA`) | Écart minimal incompressible `= 1`, tiré équiprobablement pour le 15e participant. | Oui (`7–8` / bras) |
 | **`16`** | **`8 A` / `8 B`** | `8` paires complètes (`AB`/`BA`), ex. `4` paires `ST1` + `4` paires `ST2` | Équilibre exact garanti à `8 A` / `8 B`. | Oui (`8` / `8`) |
 
-### 2.3 Méthode de tirage et traçabilité `[PROPOSITION À VALIDER]`
+### 2.3 Méthode de tirage et traçabilité `[PROPOSITION NON APPROUVÉE — À ARBITRER AVANT PRÉTEST EXTERNE]`
 
 1. **Séparation des rôles et séquence d'allocation :** avant tout recrutement réel, générer une table d'allocation hors ligne par strate (`ST1-01..ST1-08`, `ST2-01..ST2-08`) sous forme d'enveloppes scellées ou de liste locale chiffrée **non consultée d'avance par la personne qui recrute** (l'enquêteur n'ouvre le slot suivant qu'une fois la personne éligible confirmée et affectée à `ST1` ou `ST2`).
 2. **Tirage MaxDiff :** chaque instance MaxDiff est générée exclusivement par `randomize_pilot_n8_dihedral` (`audit_maxdiff_designs.py`) à partir de `designs_N6_to_N13.json` (`designs["8"]["blocks_1_indexed"]` converti en indices `0..7`), avec une graine entière explicite consignée avant séance.
@@ -100,7 +112,7 @@ Le dépôt prouve uniquement la validité combinatoire individuelle de `randomiz
 | **2. Ordre des 8 domaines dans le volet d'aide B** (`L15` § 2.3 #2, `L20` § 3.4 C1 vs C2) | **Option C1 — Même permutation aléatoire $\rho \in S_8$ que le Panorama A** (et partagée par la paire en B1), sans numérotation `1..8`. | **Option C2 — Ordre fixe** (alphabétique ou thématique `DOM-01..08`) dans le volet B alors que A est aléatoire. | - **C1 :** garantit l'équivalence stricte A/B ; exige seulement d'archiver la graine $\rho \in S_8$ (fonction absente d'`audit_maxdiff_designs.py`, simple `random.Random(seed).shuffle`).<br>- **C2 :** crée une asymétrie expérimentale entre A (ordre aléatoire exigé par `L13`) et B (ancrage fixe sur le premier domaine listé). |
 | **3. Choix du jeu de graines** (`audit_maxdiff_designs.py` vs prétest hors ligne) | Consigner explicitement `N` graines entières distinctes dans le registre hors ligne avant passation *(ex. dérivées d'une base horodatée documentée)* et archiver les séquences générées. | Tirage manuel non reproductible ou graine non conservée. | Sans archivage des graines et des matrices `S1..S8`, il devient impossible de vérifier a posteriori si une hésitation en `S1` ou un effet `HG/HD/BG/BD` vient d'un bloc précis. |
 
-> **Application au dry run interne :** pour la répétition interne à blanc uniquement (`2` séances minimum `1 A + 1 B`, idéalement `4` séances `2 A + 2 B`), on utilise deux instances vérifiées produites directement par `randomize_pilot_n8_dihedral` (`DR-INST-1` et `DR-INST-2`, Annexe A), avec appariement B1 et ordre C1, **sans que ces graines d'essai ne préjugent des graines définitives de l'étude `12–16`**.
+> **Application limitée au dry run interne :** pour la répétition interne à blanc uniquement (`1 A + 1 B` minimum, idéalement `2 A + 2 B`), le dispositif autorisé utilise les deux instances vérifiées **`DR-INST-1`** et **`DR-INST-2`** (Annexe A et dossiers imprimables [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md)), avec partage de séquence A/B par instance pour les répétitions internes, **sans que ce choix d'essai interne ne vaille approbation de l'appariement B1, de l'ordre C1 ni du protocole de randomisation définitif pour le futur prétest externe `12–16`**.
 
 ---
 
@@ -120,7 +132,7 @@ Le dépôt prouve uniquement la validité combinatoire individuelle de `randomiz
 
 | Exigence | Solution papier retenue | Règle d'équivalence A / B |
 |---|---|---|
-| **1. Disposition des 4 cartes en `2×2`** | Chaque série `S1..S8` occupe **une feuille A4 paysage dédiée** structurée en **grille `2×2` strictement symétrique** (2 colonnes × 2 lignes, 4 cadres de dimensions, police et hiérarchie identiques : intitulé gras + description courte `L11` § 2 uniquement, sans numéro `1..8`). | Identique à 100 % en A et en B (le participant coche au stylo `( ) Devrait recevoir le plus d'attention` et `( ) Pourrait attendre` dans les cases correspondantes, ainsi que les options de série en pied de page). |
+| **1. Disposition des 4 cartes en `2×2`** | Chaque série `S1..S8` occupe **une feuille A4 paysage dédiée** structurée en **grille `2×2` strictement symétrique** (2 colonnes × 2 lignes, 4 cadres de dimensions, police et hiérarchie identiques : intitulé gras + description courte `L11` uniquement, sans numéro `1..8`). | Identique à 100 % en A et en B (le participant coche au stylo `( ) Devrait recevoir le plus d'attention` et `( ) Pourrait attendre` dans les cases correspondantes, ainsi que les options de série en pied de page). |
 | **2. Randomisation et traçabilité des positions** | Convention fixe liant les 4 positions de `randomize_pilot_n8_dihedral` à la grille `2×2` :<br>- `Pos 1` = **Haut-Gauche (`HG`)**<br>- `Pos 2` = **Haut-Droite (`HD`)**<br>- `Pos 3` = **Bas-Gauche (`BG`)**<br>- `Pos 4` = **Bas-Droite (`BD`)**<br>Chaque feuille `S1..S8` porte en pied de page discret (`8 pt`, coin inférieur droit) le code technique d'instance et le mapping exact (ex. `DR-INST-1 | S1 | HG:DOM-03 · HD:DOM-06 · BG:DOM-01 · BD:DOM-07`). | Même gabarit, mêmes polices, aucun code `DOM-XX` en tête de carte chez le participant (`L14` § 2.1). |
 | **3. Accès au périmètre complet des 8 domaines (A et B)** | **Livret A4 agrafé/relié** portant sur sa couverture **uniquement** : `« Voir le périmètre complet des 8 domaines »`. À l'intérieur : les 8 fiches `L14` § 3 / `L15` § 7 (intitulé, description courte, *Ce que ce domaine couvre*, *Traité dans d'autres domaines*, sans codes `DOM-XX` ni `E01..E68`), classées dans le **même ordre aléatoire $\rho \in S_8$**. | - **Variante A :** la page `2A` (Panorama) liste les 8 intitulés + descriptions courtes dans l'ordre $\rho \in S_8$, et **le livret fermé est posé sur la table dès `2A` et pendant `S1..S8`**.<br>- **Variante B :** pas de page `2A` ; la page `2B` montre la consigne seule et **le même livret fermé est posé sur la table dès `2B` et pendant `S1..S8`**. *(Même déploiement initial en A et en B : point `L15` § 2.3 #3 résolu symétriquement.)* |
 | **4. Enregistrement des consultations du panneau d'aide en B (et en A)** | Parce que le livret est **physiquement posé fermé** sur la table, toute consultation exige un geste visible d'ouverture par le participant. L'enquêteur ne l'ouvre jamais pour lui. À chaque ouverture, l'enquêteur consigne dans `L17` (`[OBS]`) : **série en cours (`2A`/`2B`/`S1..S8`)**, **domaine(s) consulté(s)** (si visibles ou nommés) et **déclencheur** (`nb_ouvertures_perimetre`). | La trace d'ouverture en B et en A est relevée avec exactement la même grille `L17`. |
@@ -305,7 +317,7 @@ Le dépôt prouve uniquement la validité combinatoire individuelle de `randomiz
 
 | # | Dimension vérifiée | Critère factuel de réussite (`OK`) | Seuil / définition d'un problème **`[BLOQUANT]`** | Exemple typique d'amélioration de **`[CONFORT]`** | Résultat essai (`A` / `B`) |
 |---|---|---|---|---|---|
-| **1** | **Absence de différence involontaire A vs B dans les tâches** | Mêmes 8 formulations `L11` § 2, même consigne Écran 1, mêmes 8 séries `2×2`, même livret fermé, temps d'instruction hors lecture Panorama `2A` équivalent à ±1 min. | Différence de texte entre supports A et B ; accès involontaire à une vue globale avant `S1` en B ; différence de consigne orale donnée par l'enquêteur. | Harmoniser la mise en page de l'en-tête entre page `2A` et page `2B`. | `[ ] OK` · `[ ] Bloq.` · `[ ] Conf.` |
+| **1** | **Absence de différence involontaire A vs B dans les tâches** | Mêmes 8 formulations `L11`, même consigne Écran 1, mêmes 8 séries `2×2`, même livret fermé, temps d'instruction hors lecture Panorama `2A` équivalent à ±1 min. | Différence de texte entre supports A et B ; accès involontaire à une vue globale avant `S1` en B ; différence de consigne orale donnée par l'enquêteur. | Harmoniser la mise en page de l'en-tête entre page `2A` et page `2B`. | `[ ] OK` · `[ ] Bloq.` · `[ ] Conf.` |
 | **2** | **Compréhension des consignes** | Consigne D1 V0.3, sens relatif de *« Pourrait attendre »*, domaines composites, 4 états de réponse et signalement orthogonal compris sans explication orale improvisée. | L'enquêteur doit improviser une reformulation hors script pour que le testeur comprenne la tâche ou la différence *« Je ne sais pas »* / *« Impossible de départager »*. | Mettre en gras un mot clé sur l'Écran 1 ou aérer la liste à puces sans changer les mots. | `[ ] OK` · `[ ] Bloq.` · `[ ] Conf.` |
 | **3** | **Cohérence des huit séries (`S1..S8`)** | Exactement 8 séries de 4 cartes `2×2`, `0` doublon intra-série, chaque domaine vu `4` fois (`[1,1,1,1]` en `HG/HD/BG/BD`), chevauchement consécutif `= 1`, retour arrière fluide. | Erreur d'assemblage ou de collage sur une feuille `S1..S8` ; carte manquante ou dupliquée ; perte du fil de pagination lors d'un retour arrière. | Numéroter plus lisiblement les onglets de page `Série 1/8` à `Série 8/8` en coin supérieur. | `[ ] OK` · `[ ] Bloq.` · `[ ] Conf.` |
 | **4** | **Accessibilité du périmètre complet (A et B)** | En A et en B, le livret *« Voir le périmètre complet des 8 domaines »* est repéré immédiatement, consultable à tout moment sans perdre la série en cours, et dépourvu de codes `DOM-XX`/`E01..E68`. | En B, le testeur ne comprend pas qu'il peut ouvrir le livret ou n'ose pas y toucher ; code technique visible côté participant ; perte ou altération d'une réponse lors de l'ouverture. | Ajouter un intercalaire cartonné rigide ou un titre plus lisible sur la couverture du livret fermé. | `[ ] OK` · `[ ] Bloq.` · `[ ] Conf.` |
@@ -317,33 +329,42 @@ Le dépôt prouve uniquement la validité combinatoire individuelle de `randomiz
 
 ---
 
-## 6. Synthèse des décisions prises, points restant à valider et limites
+## 6. Synthèse des décisions prises, points non approuvés et limites
 
 ### 6.1 Décisions prises pour la conduite du dry run interne `[DÉCISION ACTÉE pour le dry run]`
-- Utilisation du support **papier standardisé** (carnets `S1..S8` en grille `2×2`, livret fermé symétrique *« Voir le périmètre complet des 8 domaines »*, cartons A6 en `D`, fiches `1B/2B/7B/8B` isolées en `E`).
-- Correspondance fixe de la grille `2×2` avec les 4 positions de `randomize_pilot_n8_dihedral` (`Pos 1 = HG`, `Pos 2 = HD`, `Pos 3 = BG`, `Pos 4 = BD`).
-- Réalisation d'au moins **2 séances internes complètes (`1 A + 1 B`, idéalement `4` séances `2 A + 2 B`)** avec profils simulés contrastés, hors tout recrutement externe et hors `src/`.
+- **Arbitrages éditoriaux appliqués :** `DOM-02` (*« le temps de vie, les entreprises »*) et `DOM-05` (*« le prix de l'énergie »*) alignés dans `L11`, `L13`, `L14`, `L15` et tracés dans `L20` § 4.2.
+- **Dispositif autorisé pour le dry run interne :** support **papier**, disposition en grille **`2×2`** (`Pos 1 = HG`, `Pos 2 = HD`, `Pos 3 = BG`, `Pos 4 = BD`), **livret de périmètre complet accessible** posé fermé sur la table dès `2A`/`2B`, instances vérifiées **`DR-INST-1` et `DR-INST-2`**, réalisation d'au moins **1 répétition A et 1 répétition B** (idéalement **2 répétitions par variante** si les disponibilités le permettent).
+- **Dossiers et consignes prêts :** les carnets imprimables, livrets, pochettes `D`/`E`, consignes de passation et le modèle de compte rendu factuel figurent dans [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md).
+- **Séparation stricte :** toutes les séances sont explicitement identifiées **`DRY-RUN INTERNE`** et **exclues de tout échantillon futur (`P01..P16`)**.
 
-### 6.2 Points restant à valider par arbitrage humain
-1. **Avant ou après dry run (éditorial, Section 1) :** validation finale du relevé de décision `DOM-02` (*« le temps de vie, les entreprises »*) et `DOM-05` (*« le prix de l'énergie »*) afin d'autoriser l'application des mises à jour préparées dans `L11`, `L14` et `L15` (plus confirmation du maintien de la laïcité dans `DOM-07` et éventuelle relecture pluraliste légère `L12` Option 6A).
-2. **Avant recrutement externe (`n = 12–16`, Section 2) :** arbitrage officiel entre appariement B1 vs tirages indépendants B2, validation de la stratification simple `ST1/ST2` par micro-blocs de taille 2 (`AB`/`BA`), validation de la règle d'ordre C1 ($\rho \in S_8$ partagé en A et B), et génération/archivage du registre définitif des graines `P01..P16`.
-3. **Avant tout contact ou entretien réel (`L20` § 6 & `L18`, bloquant) :** levée complète des 10 points juridiques/RGPD/consentement (responsable du traitement, base légale & art. 9 RGPD, option audio, anonymisation vs pseudonymisation, durées de conservation, stockage chiffré, personnes autorisées, validation compétente RGPD/AIPD). **Le présent document ne porte aucune déclaration de conformité juridique ou RGPD.**
+### 6.2 Points NON APPROUVÉS par la présente autorisation (restant ouverts avant tout prétest externe)
+1. **Stratification sociodémographique A/B (`§ 2.2` et `L20` § 3.5) :** **non approuvée.** En particulier, la proposition *« sans diplôme supérieur / faible aisance »* doit être réexaminée — ces deux caractéristiques ne sont pas équivalentes et ne doivent pas être fusionnées sans justification.
+2. **Règle d'appariement des blocs entre A et B (`§ 2.4` B1 vs B2) :** **non approuvée** pour le futur prétest externe (l'usage d'instances appariées dans `DR-INST-1`/`DR-INST-2` vaut uniquement pour l'essai interne).
+3. **Protocole de randomisation définitif du futur prétest (`§ 2.3`, ordre C1 vs C2 et table des graines `P01..P16`) :** **non approuvé.**
+4. **Recrutement externe et entretiens avec des participants extérieurs (`n = 12–16`) :** **non approuvés / bloqués.**
+5. **Conformité juridique ou RGPD (`L20` § 6 & `L18`) :** **aucun engagement de conformité RGPD sans validation compétente** ; les 10 points bloquants de `L20` § 6 demeurent à lever avant tout contact extérieur.
 
-### 6.3 Portée méthodologique stricte
-Ce dry run interne vérifie exclusivement l'opérabilité logistique, la symétrie matérielle A/B, la tenue du chronomètre (`45–60 min`), la neutralité de l'enquêteur et la fiabilité du recueil `L17`. **Il ne constitue ni une validation scientifique du protocole, ni une preuve de neutralité des formulations, ni un substitut au prétest cognitif réel (`12–16` participants) ni au pilote `P1.1 V0.3`.**
+### 6.3 Portée méthodologique stricte et compte rendu obligatoire après le dry run
+Ce dry run interne vérifie exclusivement l'opérabilité logistique, la symétrie matérielle A/B, la tenue du chronomètre, la neutralité de l'enquêteur et la fiabilité du recueil `L17`. **Il ne permet en aucun cas de tirer des conclusions sur la neutralité statistique ou la validité scientifique des huit domaines, et ne se substitue ni au prétest cognitif réel (`12–16` participants) ni au pilote `P1.1 V0.3`.**
+
+Après exécution, rédiger le **compte rendu factuel** ([`dry-run/MODELE_COMPTE_RENDU_FACTUEL_DRY_RUN.md`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/MODELE_COMPTE_RENDU_FACTUEL_DRY_RUN.md)) en distinguant systématiquement les **observations** des **interprétations** sur :
+- la durée réelle de chaque séance ;
+- les problèmes de compréhension des consignes ;
+- les erreurs de manipulation ou de présentation ;
+- les problèmes d'accès au périmètre complet ;
+- les difficultés de remplissage de `L17` ;
+- les différences procédurales observées entre A et B ;
+- les corrections nécessaires avant le prétest externe.
 
 ---
 
-## 7. Recommandation finale
+## 7. Statut opérationnel
 
-> **Verdict : `DRY RUN RÉALISABLE SOUS CONDITIONS`**
+> **Verdict : `DRY RUN INTERNE AUTORISÉ — DOSSIERS IMPRIMABLES PRÊTS`**
 >
-> La répétition interne à blanc est **immédiatement réalisable dès levée de 3 conditions opérationnelles minimales** (toutes internes à l'équipe, sans recrutement ni développement) :
-> 1. **Confirmation de base éditoriale d'essai :** confirmer le relevé de décision sur `DOM-02` (*« le temps de vie, les entreprises »*) et `DOM-05` (*« le prix de l'énergie »*) (base déjà présente dans `L14`/`L15`) et autoriser l'application des harmonisations préparées dans `L11`, `L14`, `L15`.
-> 2. **Validation et impression du kit papier `2×2` :** approuver le dispositif minimal (§ 3) et imprimer les 2 (ou 4) dossiers d'essai à partir des instances vérifiées ci-dessous (`DR-INST-1`, `DR-INST-2`), avec pochettes `D` et `E` séparées et livret fermé.
-> 3. **Désignation du binôme interne et séparation stricte :** désigner enquêteur, testeur(s) interne(s) et observateur éventuel, et consigner leurs séances sous marqueur `DRY-RUN INTERNE` sans jamais les mélanger à l'échantillon futur `P01..P16`.
+> Les quatre dossiers d'essai (`DR-A1`, `DR-B1`, `DR-A2`, `DR-B2`), les deux livrets de périmètre complet (`DR-INST-1`, `DR-INST-2`), les pochettes `D` et `E`, les consignes de passation et le modèle de compte rendu factuel sont prêts à imprimer dans [`docs/editorial/referentiel-v1/dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md).
 >
-> *(Rappel bloquant pour la suite : le passage ultérieur au recrutement externe restera **NON PRÊT / BLOQUÉ** tant que les arbitrages A/B finaux, les résultats satisfaisants du dry run et les 10 points RGPD/consentement de `L20` § 6 / `L18` n'auront pas été validés.)*
+> *(Rappel bloquant : aucun changement dans `src/`, aucun changement dans `P1.1 V0.3`, aucun recrutement externe, aucun entretien avec des participants extérieurs, aucun engagement de conformité RGPD sans validation compétente.)*
 
 ---
 
@@ -403,10 +424,11 @@ Les deux instances ci-dessous ont été générées directement avec la fonction
 
 ---
 
-## Annexe B — Gabarit imprimable d'une feuille de série MaxDiff `2×2` (à dupliquer pour `S1`..`S8`)
+## Annexe B — Gabarit imprimable d'une feuille de série MaxDiff `2×2` *(voir dossiers complets pré-assemblés dans [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md))*
 
 ```text
 ================================================================================
+DRY-RUN INTERNE — EXCLU DE TOUT ÉCHANTILLON FUTUR
 Série [t] sur 8                                       (Livret fermé sur table :
                                        « Voir le périmètre complet des 8 domaines »)
 --------------------------------------------------------------------------------
@@ -420,7 +442,7 @@ série ; cela ne signifie ni que l'enjeu est négligeable, ni que vous vous y op
 +--------------------------------------+  +--------------------------------------+
 | [HG] {Intitulé du domaine}           |  | [HD] {Intitulé du domaine}           |
 |                                      |  |                                      |
-| {Description courte L11 § 2}         |  | {Description courte L11 § 2}         |
+| {Description courte L11}             |  | {Description courte L11}             |
 |                                      |  |                                      |
 | ( ) Devrait recevoir le plus         |  | ( ) Devrait recevoir le plus         |
 |     d'attention                      |  |     d'attention                      |
@@ -432,7 +454,7 @@ série ; cela ne signifie ni que l'enjeu est négligeable, ni que vous vous y op
 +--------------------------------------+  +--------------------------------------+
 | [BG] {Intitulé du domaine}           |  | [BD] {Intitulé du domaine}           |
 |                                      |  |                                      |
-| {Description courte L11 § 2}         |  | {Description courte L11 § 2}         |
+| {Description courte L11}             |  | {Description courte L11}             |
 |                                      |  |                                      |
 | ( ) Devrait recevoir le plus         |  | ( ) Devrait recevoir le plus         |
 |     d'attention                      |  |     d'attention                      |
@@ -461,7 +483,7 @@ Carte concernée (HG / HD / BG / BD) : ____
 Précision libre (facultative) : ______________________________________________
 --------------------------------------------------------------------------------
                  [← Série précédente]                        [Série suivante →]
-                                 Repère technique discret : {Inst | S[t] | HG/HD/BG/BD}
+                 DRY-RUN INTERNE | {Code} | {Inst} | S[t] | HG/HD/BG/BD
 ================================================================================
 ```
-*(Consigne d'impression : retirer `[HG]`, `[HD]`, `[BG]`, `[BD]` si l'on souhaite zéro marqueur visuel d'angle chez le participant, et ne laisser que le micro-repère technique discret en bas à droite.)*
+*(Consigne d'impression : les 4 carnets pré-remplis `DR-A1`, `DR-B1`, `DR-A2`, `DR-B2` dans [`dry-run/`](file:///c:/Users/kipik/Dev/civic-explorer/docs/editorial/referentiel-v1/dry-run/README.md) appliquent ce gabarit sans marqueurs `[HG]`/`[HD]`/`[BG]`/`[BD]` sur les cartes, en conservant uniquement le micro-repère technique discret en pied de page.)*
