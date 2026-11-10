@@ -1,0 +1,3304 @@
+{
+  "metadata": {
+    "block_size": 4,
+    "reps_per_item": 4,
+    "seed_base": 20261110,
+    "generator_script": "docs/experiments/maxdiff/audit_maxdiff_designs.py"
+  },
+  "designs": {
+    "6": {
+      "n_items": 6,
+      "selected_method": "Complément de C6 {0,1,2,3} mod 6 (PBIBD optimal, D-eff max)",
+      "blocks_1_indexed": [
+        [
+          4,
+          1,
+          3,
+          2
+        ],
+        [
+          6,
+          4,
+          5,
+          3
+        ],
+        [
+          1,
+          2,
+          6,
+          5
+        ],
+        [
+          3,
+          5,
+          2,
+          4
+        ],
+        [
+          5,
+          6,
+          4,
+          1
+        ],
+        [
+          2,
+          3,
+          1,
+          6
+        ]
+      ],
+      "metrics": {
+        "n_items": 6,
+        "n_blocks": 6,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 2.4,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (6 - 1) = 2.4000 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 15,
+        "bibd_min_reps_if_r_free": 10,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "2": 9,
+          "3": 6
+        },
+        "pair_min": 2,
+        "pair_max": 3,
+        "pair_range": 1,
+        "pair_mean": 2.4,
+        "pair_variance_pop": 0.23999999999999996,
+        "pair_std_pop": 0.4898979485566356,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.23999999999999996,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            3,
+            2,
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            0,
+            3,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            0,
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3,
+            0,
+            3,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            3,
+            0,
+            3
+          ],
+          [
+            3,
+            2,
+            2,
+            2,
+            3,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          13.0,
+          13.0,
+          15.0,
+          15.0,
+          16.0
+        ],
+        "algebraic_connectivity": 13.0,
+        "d_efficiency_vs_ideal": 0.9964955163787017,
+        "fisher_se_h0_min": 0.8965746783431672,
+        "fisher_se_h0_mean": 0.9159583579348853,
+        "fisher_se_h0_max": 0.9302605094190635,
+        "max_consecutive_overlap": 2,
+        "mean_consecutive_overlap": 2.0,
+        "cyclic_wrap_overlap": 3,
+        "max_cyclic_consecutive_overlap": 3,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 6*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 81,
+            "cyclic_overlap_including_wrap_preserved_count": 1000,
+            "all_tested_invariants_including_overlap_count": 81,
+            "max_consecutive_overlap_observed_across_trials": 3,
+            "max_cyclic_overlap_observed_across_trials": 3
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Complément de C6 {0,1,2,3} mod 6 (PBIBD optimal, D-eff max)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Complément de C3 U C3 {0,1,2,4} mod 6 (même variance, D-eff moindre)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9962005206146216,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9309493362512627,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "2": 9,
+            "3": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.23999999999999996,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9964955163787017,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.9302605094190635,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "7": {
+      "n_items": 7,
+      "selected_method": "BIBD exact (7,4,2) — complément du plan de Fano PG(2,2)",
+      "blocks_1_indexed": [
+        [
+          5,
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          3,
+          6,
+          4
+        ],
+        [
+          7,
+          5,
+          4,
+          3
+        ],
+        [
+          4,
+          6,
+          1,
+          5
+        ],
+        [
+          6,
+          7,
+          5,
+          2
+        ],
+        [
+          3,
+          1,
+          7,
+          6
+        ],
+        [
+          1,
+          4,
+          2,
+          7
+        ]
+      ],
+      "metrics": {
+        "n_items": 7,
+        "n_blocks": 7,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 2.0,
+        "bibd_exact_feasible": true,
+        "bibd_feasibility_reason": "12 / (7 - 1) = 2 entier ; existe comme complément du plan de Fano PG(2,2).",
+        "bibd_min_blocks_if_r_free": 7,
+        "bibd_min_reps_if_r_free": 4,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "2": 21
+        },
+        "pair_min": 2,
+        "pair_max": 2,
+        "pair_range": 0,
+        "pair_mean": 2.0,
+        "pair_variance_pop": 0.0,
+        "pair_std_pop": 0.0,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.0,
+        "theoretical_min_range": 0,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          14.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0
+        ],
+        "algebraic_connectivity": 14.0,
+        "d_efficiency_vs_ideal": 0.9999999999999998,
+        "fisher_se_h0_min": 0.9258200997725514,
+        "fisher_se_h0_mean": 0.9258200997725515,
+        "fisher_se_h0_max": 0.9258200997725515,
+        "max_consecutive_overlap": 2,
+        "mean_consecutive_overlap": 2.0,
+        "cyclic_wrap_overlap": 2,
+        "max_cyclic_consecutive_overlap": 2,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 7*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 1000,
+            "cyclic_overlap_including_wrap_preserved_count": 1000,
+            "all_tested_invariants_including_overlap_count": 1000,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "BIBD exact (7,4,2) — complément du plan de Fano PG(2,2)",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "2": 21
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 0.9999999999999998,
+          "algebraic_connectivity": 14.0,
+          "fisher_se_h0_max": 0.9258200997725515,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "8": {
+      "n_items": 8,
+      "selected_method": "Meilleur plan cyclique exhaustif",
+      "blocks_1_indexed": [
+        [
+          2,
+          3,
+          1,
+          5
+        ],
+        [
+          8,
+          5,
+          4,
+          6
+        ],
+        [
+          3,
+          7,
+          8,
+          1
+        ],
+        [
+          6,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          6,
+          5,
+          7
+        ],
+        [
+          4,
+          1,
+          2,
+          8
+        ],
+        [
+          5,
+          4,
+          7,
+          3
+        ],
+        [
+          7,
+          8,
+          6,
+          2
+        ]
+      ],
+      "metrics": {
+        "n_items": 8,
+        "n_blocks": 8,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.7142857142857142,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (8 - 1) = 1.7143 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 14,
+        "bibd_min_reps_if_r_free": 7,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 8,
+          "2": 20
+        },
+        "pair_min": 1,
+        "pair_max": 2,
+        "pair_range": 1,
+        "pair_mean": 1.7142857142857142,
+        "pair_variance_pop": 0.20408163265306123,
+        "pair_std_pop": 0.45175395145262565,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.20408163265306123,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            0,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            0,
+            2,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            2,
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            2,
+            2,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          12.0,
+          12.58578644,
+          12.58578644,
+          14.0,
+          14.0,
+          15.41421356,
+          15.41421356
+        ],
+        "algebraic_connectivity": 12.0,
+        "d_efficiency_vs_ideal": 0.9956767053650951,
+        "fisher_se_h0_min": 0.9282031670346088,
+        "fisher_se_h0_mean": 0.9393440628549937,
+        "fisher_se_h0_max": 0.9634330490796497,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 8*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 0,
+            "cyclic_overlap_including_wrap_preserved_count": 0,
+            "all_tested_invariants_including_overlap_count": 0,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0,
+          "pilot_n8_dihedral_pi_tau_D8": {
+            "trials": 1000,
+            "seed_formula": "20261110 + 8000000 + trial_index",
+            "exact_position_balance_1111_count": 1000,
+            "uniform_frequency_r4_count": 1000,
+            "cooccurrence_and_connectivity_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "linear_max_consecutive_overlap_eq_1_count": 1000,
+            "cyclic_wrap_B8_to_B1_overlap_eq_1_count": 1000,
+            "cyclic_max_consecutive_overlap_eq_1_count": 1000,
+            "all_tested_invariants_preserved_count": 1000,
+            "max_consecutive_overlap_observed": 1,
+            "max_cyclic_wrap_B8_to_B1_observed": 1
+          }
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 8,
+            "2": 20
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.20408163265306123,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9956767053650951,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9634330490796497,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 8,
+            "2": 20
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.20408163265306123,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9956767053650951,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9634330490796496,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 8,
+            "2": 20
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.20408163265306123,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9956767053650951,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9634330490796496,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "1": 8,
+            "2": 20
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.20408163265306123,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9956767053650951,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9634330490796496,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 8,
+            "2": 20
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.20408163265306123,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9956767053650951,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9634330490796496,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "9": {
+      "n_items": 9,
+      "selected_method": "Meilleur plan cyclique exhaustif",
+      "blocks_1_indexed": [
+        [
+          7,
+          6,
+          4,
+          3
+        ],
+        [
+          9,
+          8,
+          6,
+          5
+        ],
+        [
+          8,
+          1,
+          2,
+          7
+        ],
+        [
+          4,
+          3,
+          1,
+          9
+        ],
+        [
+          6,
+          5,
+          3,
+          2
+        ],
+        [
+          5,
+          7,
+          8,
+          4
+        ],
+        [
+          1,
+          9,
+          7,
+          6
+        ],
+        [
+          3,
+          2,
+          9,
+          8
+        ],
+        [
+          2,
+          4,
+          5,
+          1
+        ]
+      ],
+      "metrics": {
+        "n_items": 9,
+        "n_blocks": 9,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.5,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (9 - 1) = 1.5000 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 18,
+        "bibd_min_reps_if_r_free": 8,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 18,
+          "2": 18
+        },
+        "pair_min": 1,
+        "pair_max": 2,
+        "pair_range": 1,
+        "pair_mean": 1.5,
+        "pair_variance_pop": 0.25,
+        "pair_std_pop": 0.5,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.25,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            2,
+            0,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            2,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          12.0,
+          12.0,
+          12.46791111,
+          12.46791111,
+          13.65270364,
+          13.65270364,
+          15.87938524,
+          15.87938524
+        ],
+        "algebraic_connectivity": 12.0,
+        "d_efficiency_vs_ideal": 0.9940839326408032,
+        "fisher_se_h0_min": 0.9304325727719487,
+        "fisher_se_h0_mean": 0.9481597542089255,
+        "fisher_se_h0_max": 0.9657470717456387,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 9*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 6,
+            "cyclic_overlap_including_wrap_preserved_count": 5,
+            "all_tested_invariants_including_overlap_count": 5,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 18,
+            "2": 18
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.25,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9940839326408032,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9657470717456387,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 18,
+            "2": 18
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.25,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9935519723575034,
+          "algebraic_connectivity": 10.69722436,
+          "fisher_se_h0_max": 0.9699341083164065,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 18,
+            "2": 18
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.25,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9935519723575034,
+          "algebraic_connectivity": 10.69722436,
+          "fisher_se_h0_max": 0.9699341083164065,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "1": 18,
+            "2": 18
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.25,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9939919093426803,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9659258876916079,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 18,
+            "2": 18
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.25,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9935519723575034,
+          "algebraic_connectivity": 10.69722436,
+          "fisher_se_h0_max": 0.9699341083164065,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "10": {
+      "n_items": 10,
+      "selected_method": "Meilleur plan cyclique exhaustif",
+      "blocks_1_indexed": [
+        [
+          6,
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          10,
+          8,
+          9
+        ],
+        [
+          10,
+          7,
+          5,
+          6
+        ],
+        [
+          7,
+          3,
+          4,
+          2
+        ],
+        [
+          4,
+          9,
+          10,
+          1
+        ],
+        [
+          1,
+          8,
+          6,
+          7
+        ],
+        [
+          8,
+          4,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          1,
+          10
+        ],
+        [
+          9,
+          2,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          9,
+          4
+        ]
+      ],
+      "metrics": {
+        "n_items": 10,
+        "n_blocks": 10,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.3333333333333333,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (10 - 1) = 1.3333 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 15,
+        "bibd_min_reps_if_r_free": 6,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 30,
+          "2": 15
+        },
+        "pair_min": 1,
+        "pair_max": 2,
+        "pair_range": 1,
+        "pair_mean": 1.3333333333333333,
+        "pair_variance_pop": 0.2222222222222222,
+        "pair_std_pop": 0.4714045207910317,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.2222222222222222,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          11.38196601,
+          11.38196601,
+          12.38196601,
+          12.38196601,
+          13.61803399,
+          13.61803399,
+          14.61803399,
+          14.61803399,
+          16.0
+        ],
+        "algebraic_connectivity": 11.38196601,
+        "d_efficiency_vs_ideal": 0.9938002460048164,
+        "fisher_se_h0_min": 0.9306030837298539,
+        "fisher_se_h0_mean": 0.9544358168961693,
+        "fisher_se_h0_max": 0.9686633467721332,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 10*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 20,
+            "cyclic_overlap_including_wrap_preserved_count": 12,
+            "all_tested_invariants_including_overlap_count": 12,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 30,
+            "2": 15
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.2222222222222222,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9938002460048164,
+          "algebraic_connectivity": 11.38196601,
+          "fisher_se_h0_max": 0.9686633467721332,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 30,
+            "2": 15
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.2222222222222222,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9937106885399163,
+          "algebraic_connectivity": 11.09678807,
+          "fisher_se_h0_max": 0.9692657937681942,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 30,
+            "2": 15
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.2222222222222222,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9937106885399163,
+          "algebraic_connectivity": 11.09678807,
+          "fisher_se_h0_max": 0.9692657937681942,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "1": 30,
+            "2": 15
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.2222222222222222,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9938002460048164,
+          "algebraic_connectivity": 11.38196601,
+          "fisher_se_h0_max": 0.9686633467721331,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 30,
+            "2": 15
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.2222222222222222,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9937106885399163,
+          "algebraic_connectivity": 11.09678807,
+          "fisher_se_h0_max": 0.9692657937681942,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "11": {
+      "n_items": 11,
+      "selected_method": "Meilleur plan cyclique exhaustif",
+      "blocks_1_indexed": [
+        [
+          7,
+          10,
+          5,
+          6
+        ],
+        [
+          10,
+          1,
+          11,
+          4
+        ],
+        [
+          8,
+          2,
+          10,
+          9
+        ],
+        [
+          4,
+          7,
+          3,
+          2
+        ],
+        [
+          9,
+          6,
+          4,
+          5
+        ],
+        [
+          11,
+          8,
+          6,
+          7
+        ],
+        [
+          6,
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          4,
+          8,
+          3
+        ],
+        [
+          1,
+          9,
+          7,
+          8
+        ],
+        [
+          3,
+          11,
+          9,
+          10
+        ],
+        [
+          2,
+          5,
+          1,
+          11
+        ]
+      ],
+      "metrics": {
+        "n_items": 11,
+        "n_blocks": 11,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.2,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (11 - 1) = 1.2000 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 55,
+        "bibd_min_reps_if_r_free": 20,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 44,
+          "2": 11
+        },
+        "pair_min": 1,
+        "pair_max": 2,
+        "pair_range": 1,
+        "pair_mean": 1.2,
+        "pair_variance_pop": 0.16,
+        "pair_std_pop": 0.4,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.16,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          11.31749293,
+          11.31749293,
+          12.16916997,
+          12.16916997,
+          13.28462968,
+          13.28462968,
+          14.30972147,
+          14.30972147,
+          14.91898595,
+          14.91898595
+        ],
+        "algebraic_connectivity": 11.31749293,
+        "d_efficiency_vs_ideal": 0.9948836511638003,
+        "fisher_se_h0_min": 0.92838944873788,
+        "fisher_se_h0_mean": 0.9582813361305529,
+        "fisher_se_h0_max": 0.9665381213805134,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 11*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 100,
+            "cyclic_overlap_including_wrap_preserved_count": 78,
+            "all_tested_invariants_including_overlap_count": 78,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 44,
+            "2": 11
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.16,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9948836511638003,
+          "algebraic_connectivity": 11.31749293,
+          "fisher_se_h0_max": 0.9665381213805134,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 44,
+            "2": 11
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.16,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9948836511638003,
+          "algebraic_connectivity": 11.31749293,
+          "fisher_se_h0_max": 0.9665381213805134,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 44,
+            "2": 11
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.16,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9948836511638003,
+          "algebraic_connectivity": 11.31749293,
+          "fisher_se_h0_max": 0.9665381213805134,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "1": 44,
+            "2": 11
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.16,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9948836511638003,
+          "algebraic_connectivity": 11.31749293,
+          "fisher_se_h0_max": 0.9665381213805134,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 44,
+            "2": 11
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.16,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9948836511638003,
+          "algebraic_connectivity": 11.31749293,
+          "fisher_se_h0_max": 0.9665381213805134,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "12": {
+      "n_items": 12,
+      "selected_method": "Plan circulant quasi équilibré {0,1,3,7} mod 12 (variance min)",
+      "blocks_1_indexed": [
+        [
+          8,
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          5,
+          9,
+          3
+        ],
+        [
+          10,
+          3,
+          4,
+          6
+        ],
+        [
+          5,
+          4,
+          11,
+          7
+        ],
+        [
+          12,
+          8,
+          6,
+          5
+        ],
+        [
+          9,
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          10,
+          8,
+          2
+        ],
+        [
+          11,
+          9,
+          3,
+          8
+        ],
+        [
+          4,
+          12,
+          10,
+          9
+        ],
+        [
+          1,
+          11,
+          5,
+          10
+        ],
+        [
+          6,
+          2,
+          12,
+          11
+        ],
+        [
+          3,
+          7,
+          1,
+          12
+        ]
+      ],
+      "metrics": {
+        "n_items": 12,
+        "n_blocks": 12,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.0909090909090908,
+        "bibd_exact_feasible": false,
+        "bibd_feasibility_reason": "Impossible avec b=N, r=4 : lambda = 12 / (12 - 1) = 1.0909 n'est pas entier (diviseurs de 12 >= 3 : 3, 4, 6, 12 => N in {4, 5, 7, 13}).",
+        "bibd_min_blocks_if_r_free": 33,
+        "bibd_min_reps_if_r_free": 11,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 60,
+          "2": 6
+        },
+        "pair_min": 1,
+        "pair_max": 2,
+        "pair_range": 1,
+        "pair_mean": 1.0909090909090908,
+        "pair_variance_pop": 0.08264462809917354,
+        "pair_std_pop": 0.28747978728803447,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.08264462809917356,
+        "theoretical_min_range": 1,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0,
+          14.0
+        ],
+        "algebraic_connectivity": 12.0,
+        "d_efficiency_vs_ideal": 0.9970750978924628,
+        "fisher_se_h0_min": 0.9258200997725514,
+        "fisher_se_h0_mean": 0.9601873833060788,
+        "fisher_se_h0_max": 0.9636241116594316,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 12*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 341,
+            "cyclic_overlap_including_wrap_preserved_count": 314,
+            "all_tested_invariants_including_overlap_count": 314,
+            "max_consecutive_overlap_observed_across_trials": 2,
+            "max_cyclic_overlap_observed_across_trials": 2
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "Plan circulant quasi équilibré {0,1,3,7} mod 12 (variance min)",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594316,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594316,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594317,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594317,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594317,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 60,
+            "2": 6
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.08264462809917354,
+          "pair_range": 1,
+          "d_efficiency_vs_ideal": 0.9970750978924628,
+          "algebraic_connectivity": 12.0,
+          "fisher_se_h0_max": 0.9636241116594317,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    },
+    "13": {
+      "n_items": 13,
+      "selected_method": "BIBD exact (13,4,1) — plan projectif PG(2,3) (Singer)",
+      "blocks_1_indexed": [
+        [
+          4,
+          10,
+          1,
+          2
+        ],
+        [
+          5,
+          2,
+          11,
+          3
+        ],
+        [
+          6,
+          12,
+          3,
+          4
+        ],
+        [
+          13,
+          4,
+          7,
+          5
+        ],
+        [
+          8,
+          5,
+          6,
+          1
+        ],
+        [
+          7,
+          6,
+          2,
+          9
+        ],
+        [
+          10,
+          3,
+          8,
+          7
+        ],
+        [
+          9,
+          11,
+          4,
+          8
+        ],
+        [
+          12,
+          9,
+          5,
+          10
+        ],
+        [
+          11,
+          13,
+          10,
+          6
+        ],
+        [
+          1,
+          7,
+          12,
+          11
+        ],
+        [
+          2,
+          8,
+          13,
+          12
+        ],
+        [
+          3,
+          1,
+          9,
+          13
+        ]
+      ],
+      "metrics": {
+        "n_items": 13,
+        "n_blocks": 13,
+        "block_size": 4,
+        "reps_per_item": 4,
+        "bibd_lambda_ideal": 1.0,
+        "bibd_exact_feasible": true,
+        "bibd_feasibility_reason": "12 / (13 - 1) = 1 entier ; existe comme plan projectif PG(2,3).",
+        "bibd_min_blocks_if_r_free": 13,
+        "bibd_min_reps_if_r_free": 4,
+        "item_frequencies": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "item_freq_uniform": true,
+        "pair_histogram": {
+          "1": 78
+        },
+        "pair_min": 1,
+        "pair_max": 1,
+        "pair_range": 0,
+        "pair_mean": 1.0,
+        "pair_variance_pop": 0.0,
+        "pair_std_pop": 0.0,
+        "zero_pair_count": 0,
+        "theoretical_min_variance": 0.0,
+        "theoretical_min_range": 0,
+        "theoretical_min_zero_pairs": 0,
+        "is_globally_optimal_variance": true,
+        "connected_components": 1,
+        "is_connected": true,
+        "duplicate_block_count": 0,
+        "intra_block_unique": true,
+        "position_balance_exact": true,
+        "position_matrix": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "cooccurrence_matrix": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        "laplacian_positive_eigenvalues": [
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0
+        ],
+        "algebraic_connectivity": 13.0,
+        "d_efficiency_vs_ideal": 1.0,
+        "fisher_se_h0_min": 0.9607689228305225,
+        "fisher_se_h0_mean": 0.9607689228305227,
+        "fisher_se_h0_max": 0.960768922830523,
+        "max_consecutive_overlap": 1,
+        "mean_consecutive_overlap": 1.0,
+        "cyclic_wrap_overlap": 1,
+        "max_cyclic_consecutive_overlap": 1,
+        "randomization_monte_carlo_1000": {
+          "trials": 1000,
+          "seed_formula_exploratory": "20261110 + 13*100000 + trial_index",
+          "exploratory_sigma_SN": {
+            "exact_position_balance_count": 1000,
+            "uniform_frequency_count": 1000,
+            "cooccurrence_preserved_count": 1000,
+            "no_duplicates_and_intra_unique_count": 1000,
+            "order_agnostic_invariants_count": 1000,
+            "max_consecutive_overlap_preserved_count": 1000,
+            "cyclic_overlap_including_wrap_preserved_count": 1000,
+            "all_tested_invariants_including_overlap_count": 1000,
+            "max_consecutive_overlap_observed_across_trials": 1,
+            "max_cyclic_overlap_observed_across_trials": 1
+          },
+          "naive_exact_position_rate": 0.0,
+          "naive_exact_position_count": 0
+        }
+      },
+      "objective_comparison": [
+        {
+          "candidate": "BIBD exact (13,4,1) — plan projectif PG(2,3) (Singer)",
+          "pair_histogram": {
+            "1": 78
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 1.0,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.960768922830523,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Meilleur plan cyclique exhaustif",
+          "pair_histogram": {
+            "1": 78
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 1.0,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.960768922830523,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_A (Variance paires)",
+          "pair_histogram": {
+            "1": 78
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 1.0,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.960768922830523,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_B (Minimax + zéro-paires)",
+          "pair_histogram": {
+            "1": 78
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 1.0,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.960768922830523,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_C (D-optimalité Laplacien)",
+          "pair_histogram": {
+            "0": 4,
+            "1": 70,
+            "2": 4
+          },
+          "zero_pair_count": 4,
+          "pair_variance_pop": 0.10256410256410256,
+          "pair_range": 2,
+          "d_efficiency_vs_ideal": 0.9960157514267658,
+          "algebraic_connectivity": 11.0,
+          "fisher_se_h0_max": 1.003490412008509,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        },
+        {
+          "candidate": "Recherche générale — Obj_D (Pondérée 100·dup + 10·zero + sq)",
+          "pair_histogram": {
+            "1": 78
+          },
+          "zero_pair_count": 0,
+          "pair_variance_pop": 0.0,
+          "pair_range": 0,
+          "d_efficiency_vs_ideal": 1.0,
+          "algebraic_connectivity": 13.0,
+          "fisher_se_h0_max": 0.960768922830523,
+          "duplicate_block_count": 0,
+          "is_connected": true,
+          "position_balance_exact": true
+        }
+      ]
+    }
+  }
+}
