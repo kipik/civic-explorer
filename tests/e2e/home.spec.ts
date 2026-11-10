@@ -1,8 +1,8 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-test.describe("Socle P0.1 — Page placeholder", () => {
-  test("affiche la page sobrement sans requête externe, stockage ni erreur d'accessibilité", async ({
+test.describe("Accueil Civic Explorer (P0.2)", () => {
+  test("affiche la présentation du parcours sans requête externe, stockage ni erreur d'accessibilité", async ({
     page,
     context,
   }) => {
@@ -41,9 +41,14 @@ test.describe("Socle P0.1 — Page placeholder", () => {
     await expect(
       page.getByRole("heading", {
         level: 1,
-        name: /espace sobre pour explorer ses priorités civiques/i,
+        name: /espace sobre pour clarifier vos convictions/i,
       }),
     ).toBeVisible();
+
+    await expect(page.getByRole("link", { name: /commencer l'exploration/i })).toHaveAttribute(
+      "href",
+      "/parcours",
+    );
 
     // Navigation clavier : le lien d'évitement doit recevoir le focus dès la première tabulation
     await page.keyboard.press("Tab");
@@ -57,10 +62,12 @@ test.describe("Socle P0.1 — Page placeholder", () => {
     const storageState = await page.evaluate(() => ({
       localStorageLength: window.localStorage.length,
       sessionStorageLength: window.sessionStorage.length,
+      cookieString: document.cookie,
     }));
     expect(storageState).toEqual({
       localStorageLength: 0,
       sessionStorageLength: 0,
+      cookieString: "",
     });
 
     // Vérification absence d'erreurs et de requêtes tierces

@@ -18,6 +18,15 @@
 
 **Acceptation :** installation propre documentée ; CI passe ; build propre ; aucune DB, API métier ou intégration IA ajoutée.
 
+### P0.2 — Premier parcours fonctionnel : expression et clarification (4 écrans)
+
+- Écran 1 : accueil du parcours et expression libre sur la question « Quelles sont les choses qui vous préoccupent le plus concernant l'avenir de la France ? », sans minimum de longueur ni nombre de sujets imposé, avec options « passer » et « je ne sais pas encore » ;
+- Écran 2 : structuration locale déterministe sans IA ni appel réseau (`deterministic-split-v0.1`), modification manuelle, scission, réorganisation, objectif et conditions facultatifs, taxonomie provisoire illustrative avec option « je ne sais pas où classer » ;
+- Écran 3 : confirmation explicite par déclaration (confirmation, modification du texte, précision de l'objectif, ajout/retrait de conditions, incertitude, suppression avec annulation) — aucun brouillon n'est attribué comme conviction sans confirmation ;
+- Écran 4 : cartographie initiale des seules déclarations confirmées, groupées par thème explicitement sélectionné, avec retour et correction possibles à chaque étape et effacement complet de la session en mémoire.
+
+**Acceptation :** tests unitaires métier, tests composants, tests E2E du parcours complet, test canari prouvant l'absence de stockage persistant et de transmission réseau, conformité WCAG 2.2 AA vérifiée. Les exercices MaxDiff (`P1.3`) et l'export JSON (`P1.5`) restent reportés aux lots suivants.
+
 ## EPIC 1 — Première tranche verticale privacy-first
 
 ### P1.1 — Accueil et explication

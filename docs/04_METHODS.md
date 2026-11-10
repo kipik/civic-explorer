@@ -96,6 +96,8 @@ Lorsque des modèles validés existent, l'information attendue ou l'information 
 
 Le texte libre reste la source originale. Une extraction structurée doit garder le lien vers le texte et être confirmée par la personne.
 
+Dans le lot P0.2, la structuration initiale repose sur un découpage local purement déterministe (`deterministic-split-v0.1`, par lignes, marqueurs de liste et frontières de phrases simples), sans analyse sémantique automatique ni pré-attribution thématique. Chaque segment généré reste un brouillon non confirmé (`confirmedByUser: false`) tant que la personne ne l'a pas relu et confirmé.
+
 Relations possibles entre déclarations :
 
 - compatibles ;

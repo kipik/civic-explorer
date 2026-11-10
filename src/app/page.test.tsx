@@ -2,14 +2,14 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import HomePage from "@/app/page";
 
-describe("HomePage placeholder (P0.1)", () => {
-  it("affiche le titre principal, les repères sémantiques et les engagements du prototype", () => {
+describe("HomePage (P0.2)", () => {
+  it("affiche la présentation du prototype, les repères sémantiques et le lien vers le parcours", () => {
     render(<HomePage />);
 
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: /espace sobre pour explorer ses priorités civiques/i,
+        name: /espace sobre pour clarifier vos convictions/i,
       }),
     ).toBeInTheDocument();
 
@@ -17,14 +17,16 @@ describe("HomePage placeholder (P0.1)", () => {
     expect(screen.getByRole("main")).toBeInTheDocument();
     expect(screen.getByRole("contentinfo")).toBeInTheDocument();
 
+    const startLink = screen.getByRole("link", { name: /commencer l'exploration/i });
+    expect(startLink).toHaveAttribute("href", "/parcours");
+
     expect(screen.getByText(/ne recommande, ne classe et ne note aucun candidat/i)).toBeVisible();
-    expect(screen.getByText(/aucune saisie personnelle n'est demandée/i)).toBeVisible();
+    expect(screen.getByText(/aucune donnée envoyée au serveur/i)).toBeVisible();
   });
 
-  it("ne demande aucune saisie personnelle dans la tranche bootstrap", () => {
+  it("ne demande aucune saisie personnelle sur la page d'accueil statique", () => {
     render(<HomePage />);
 
     expect(screen.queryByRole("textbox")).not.toBeInTheDocument();
-    expect(screen.queryByRole("form")).not.toBeInTheDocument();
   });
 });

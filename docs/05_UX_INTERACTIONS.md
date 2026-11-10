@@ -20,7 +20,11 @@ Ne jamais présenter le parcours comme un test ou un examen. Pas de barre de « 
 
 ### Expression libre
 
-« Quelles questions concernant l'avenir du pays aimeriez-vous mieux comprendre ou voir traitées ? Vous pouvez écrire librement, sans chercher les bons mots. »
+Question principale retenue pour le parcours P0.2 :
+
+« Quelles sont les choses qui vous préoccupent le plus concernant l'avenir de la France ? »
+
+Sous-titre d'accompagnement : « Vous pouvez écrire un mot, une phrase, une liste à puces ou plusieurs paragraphes, sans chercher les bons mots. »
 
 ### Confirmation
 

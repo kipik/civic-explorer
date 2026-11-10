@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Civic Explorer — Socle prototype",
+  title: "Civic Explorer — Clarifier ses convictions",
   description:
     "Explorateur de convictions et comparateur documentaire pour le débat public, conçu sans recommandation ni profilage.",
 };
@@ -14,7 +14,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="fr">
+    <html lang="fr" data-scroll-behavior="smooth">
       <body className="min-h-screen bg-stone-50 text-stone-900 antialiased">
         <a
           href="#main-content"
