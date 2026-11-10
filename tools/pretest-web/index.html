@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <title>Civic Explorer — Passation prétest &amp; dry run (L13–L21)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app-main">Aller au contenu principal</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-title">Civic Explorer</span>
+          <div id="header-badges" class="btn-group"></div>
+        </div>
+        <div id="header-actions" class="header-actions"></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav id="progress-nav" aria-label="Progression du parcours"></nav>
+      <main id="app-main"></main>
+    </div>
+
+    <div
+      id="modal-backdrop"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      hidden
+    >
+      <div id="modal-content" class="modal-panel"></div>
+    </div>
+
+    <script src="./js/data.js" defer></script>
+    <script src="./js/maxdiff.js" defer></script>
+    <script src="./js/export-l17.js" defer></script>
+    <script src="./js/participant-app.js" defer></script>
+  </body>
+</html>
